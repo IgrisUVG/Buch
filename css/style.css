@@ -1,0 +1,68 @@
+html {
+    height: 100%;
+}
+
+body {
+    width: 50%;
+    margin-top: 1em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+h1, h2, .center {
+    text-align: center;
+}
+
+div#content {
+    padding: 20px 5px 20px 40px;
+    position: relative;
+    width: 675px;
+}
+
+.button {
+    margin-top: 20em;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+label {
+    display: block;
+    float: left;
+    width: 150px;
+    padding: 0 10px;
+    margin: 5px 0 0;
+    text-align: right;
+}
+
+fieldset {
+    border-color: #000;
+    border-width: 1px;
+    border-style: solid;
+    padding: 10px;
+    margin: 0;
+}
+
+fieldset br {
+    clear: left;
+}
+
+form input, form textarea {
+    margin: 5px 0 5px 5px;
+}
