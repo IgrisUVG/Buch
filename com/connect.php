@@ -6,5 +6,5 @@ if ($mysqli->connect_errno) {
 }
 $res = mysqli_query($mysqli, "SELECT 'Вы подключились к MySQL!' AS _msg FROM DUAL");
 $row = mysqli_fetch_assoc($res);
-echo $row['_msg'];
-echo "<p>Вы подключены к MySQL с использованием базы данных " . DATABASE_NAME . ".</p>";
+//echo $row['_msg'];
+//echo "<p>Вы подключены к MySQL с использованием базы данных " . DATABASE_NAME . ".</p>";
