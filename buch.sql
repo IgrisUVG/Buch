@@ -27,7 +27,7 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `autors` (
-  `autor_id` int(11) NOT NULL,
+  `autor_id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
   `first_name` varchar(20) NOT NULL,
   `second_name` varchar(30) DEFAULT NULL,
   `last_name` varchar(50) NOT NULL,
@@ -35,8 +35,8 @@ CREATE TABLE `autors` (
   `inhalt` enum('') NOT NULL,
   `description` mediumtext,
   `cover` varchar(100) DEFAULT NULL,
-  `shcrank_num` int(5) NOT NULL,
-  `regal_num` int(5) NOT NULL
+  `schrank_num` INT(1) NOT NULL,
+  `regal_num` CHAR(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
