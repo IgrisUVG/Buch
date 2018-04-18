@@ -11,13 +11,13 @@
 <div id="content">
     <form action="../scripts/addBuch.php" method="POST" enctype="multipart/form-data">
         <fieldset>
-            <label for="first_name">Имя:</label>
+            <label for="first_name"><sub>*</sub>Имя:</label>
             <input type="text" id="first_name" name="first_name" size="20"/><br/>
             <label for="second_name">Отчество:</label>
             <input type="text" id="second_name" name="second_name" size="20"/><br/>
-            <label for="last_name">Фамилия:</label>
+            <label for="last_name"><sub>*</sub>Фамилия:</label>
             <input type="text" id="last_name" name="last_name" size="20"/><br/>
-            <label for="title">Название:</label>
+            <label for="title"><sub>*</sub>Название:</label>
             <input type="text" id="title" name="title" size="50"/><br/>
             <label for="inhalt">Содержание:</label>
             <input type="text" id="inhalt" name="inhalt" size="50"/><br/>
@@ -26,8 +26,8 @@
             <input type="hidden" name="MAX_FILE_SIZE" value="2000000" />
             <label for="cover">Обложка:</label>
             <input type="file" id="cover" name="cover" size="30" /><br/>
-            <label for="shcrank_num">Шкаф:</label>
-            <input type="text" id="shcrank_num" name="shcrank_num" size="10"><br/>
+            <label for="schrank_num">Шкаф:</label>
+            <input type="text" id="schrank_num" name="schrank_num" size="10"><br/>
             <label for="regal_num">Полка:</label>
             <input type="text" id="regal_num" name="regal_num" size="10"><br/>
         </fieldset>
