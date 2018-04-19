@@ -67,8 +67,8 @@ form input, form textarea {
     margin: 5px 0 5px 5px;
 }
 
-.sub {
-    vertical-align: sub;
-    font-size: 10px;
+.sup {
+    vertical-align: super;
+    font-size: 5px;
     color: red;
 }
