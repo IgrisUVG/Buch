@@ -9,7 +9,7 @@
 <?php
     require '../com/connect.php';
     $user_id = $_REQUEST['user_id'];
-    $select_query = "SELECT * FROM users WHERE user_id=" . $user_id;
+    $select_query = "SELECT * FROM autors WHERE autor_id=" . $user_id;
     $result = mysqli_query($mysqli, $select_query);
     if ($result) {
         $row = $result->fetch_array();
@@ -19,7 +19,7 @@
     $title = $row['title'];
     $inhalt = $row['inhalt'];
     $description = preg_replace("/[\r\n]+/", "</p><p>", $row['description']);
-    $shcrank_num = $row['shcrank_num'];
+    $schrank_num = $row['schrank_num'];
     $regal_num = $row['regal_num'];
     $cover = $row['cover'];
     } else {
@@ -38,7 +38,7 @@
         </div>
         <div><?php echo $inhalt; ?></div>
         <ul>
-            <li><?php echo $shcrank_num; ?></li>
+            <li><?php echo $schrank_num; ?></li>
             <li><?php echo $regal_num; ?></li>
         </ul>
     </div>
