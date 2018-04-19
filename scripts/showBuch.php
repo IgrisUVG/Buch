@@ -1,7 +1,7 @@
 <?php
 require '../com/connect.php';
-$user_id = $_REQUEST['user_id'];
-$select_query = "SELECT * FROM autors WHERE autor_id=" . $user_id;
+$autor_id = $_REQUEST['autor_id'];
+$select_query = "SELECT * FROM autors WHERE autor_id=" . $autor_id;
 $result = mysqli_query($mysqli, $select_query);
 if ($result) {
     $row = $result->fetch_array();
@@ -13,9 +13,9 @@ if ($result) {
     $description = preg_replace("/[\r\n]+/", "</p><p>", $row['description']);
     $schrank_num = $row['schrank_num'];
     $regal_num = $row['regal_num'];
-    $cover = $row['cover'];
+    $cover = get_web_path($row['cover']);
 } else {
-    die("Ошибка обнаружения пользователя с ID {$user_id}");
+    handle_error("возникла проблема с поиском вашей информации на нашей системе.","Ошибка обнаружения пользователя с ID {$autor_id}");
 }
 ?>
 <html>
@@ -43,6 +43,8 @@ if ($result) {
             <p>Шкаф <?php echo $schrank_num; ?>, полка <?php echo $regal_num; ?></p>
         </div>
     </div>
+    <button onclick="window.location.href='../seite/addBuch.html'">К добавлению</button>
+    <button onclick="window.location.href='../index.html'">В начало</button>
 </div>
 <div id="footer"></div>
 </body>
