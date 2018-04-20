@@ -98,17 +98,18 @@ img.cover_pic {
     display: inline-block;
     margin-left: auto;
     margin-right: auto;
-    width: 6em;
-    height: 2em;
+    padding: 0.5em;
+    /*width: 6em;*/
+    /*height: 2em;*/
     color: white;
     font-family: Georgia, serif;
     text-align: center;
     /*display: table-cell;*/
     /*vertical-align: middle;*/
-    /*font-size: 1em;*/
+    font-size: 1em;
     background-color: #2e6da4;
     border: hidden;
-    /*border-radius: 10% 10%;*/
+    border-radius: 1em;
 }
 
 .but:hover {
@@ -117,8 +118,10 @@ img.cover_pic {
 }
 
 .but:active {
-    width: 5.8em;
-    height: 1.8em;
+    /*padding: 0.4em;*/
+    /*width: 5.8em;*/
+    /*height: 1.8em;*/
+    font-size: 0.9em;
     transform: translate(0, 2px);
     -webkit-transform: translate(0, 2px); /** Chrome & Safari **/
     -o-transform: translate(0, 2px); /** Opera **/
