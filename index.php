@@ -38,7 +38,8 @@
     </div>
 </div>
 <div class="button">
-    <button onclick="window.location.href='seite/addBuch.html'">Добавить</button>
+    <!--button onclick="window.location.href='seite/addBuch.html'">Добавить</button-->
+    <a class="but" href="seite/addBuch.html">Добавить</a>
 </div>
 <div id="footer"></div>
 </body>

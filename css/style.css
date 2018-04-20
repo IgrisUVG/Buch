@@ -44,7 +44,7 @@ table {
 }
 
 /*tr:nth-child(odd) {*/
-    /*background: #ccc;*/
+/*background: #ccc;*/
 /*}*/
 
 td:nth-child(2) {
@@ -90,10 +90,37 @@ img.cover_pic {
 
 .keller {
     padding-top: 5em;
+    clear: both;
+}
+
+.but {
+    display: block;
     margin-left: auto;
     margin-right: auto;
+    width: 6em;
+    height: 2em;
+    color: white;
+    font-family: Georgia, serif;
     text-align: center;
-    clear: both;
+    /*vertical-align: baseline;*/
+    /*font-size: 1em;*/
+    background-color: #2e6da4;
+    border: hidden;
+    /*border-radius: 10% 10%;*/
+}
+
+.but:hover {
+    background-color: #204d74;
+    text-decoration: none;
+}
+
+.but:active {
+    width: 5.8em;
+    height: 1.8em;
+    transform: translate(0, 2px);
+    -webkit-transform: translate(0, 2px); /** Chrome & Safari **/
+    -o-transform: translate(0, 2px); /** Opera **/
+    -moz-transform: translate(0, 2px); /** Firefox **/
 }
 
 a {
