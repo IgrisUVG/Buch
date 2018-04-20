@@ -38,34 +38,71 @@ $now = time();
 while (file_exists($upload_filename = $upload_dir . $now . '-' .  $_FILES[$image_fieldname]['name'])) {
     $now++;
 }
-@move_uploaded_file($_FILES[$image_fieldname]['tmp_name'], $upload_filename)
-    or handle_error("возникла проблема сохранения вашего изображения в его постоянном месте.", "Ошибка, связанная с правами доступа при перемещении файла в {$upload_filename}");
 
-$insert_sql = "
-  INSERT INTO autors (
-      first_name, 
-      second_name, 
-      last_name,
-      title, 
-      inhalt, 
-      description, 
-      schrank_num, 
-      regal_num,
-      cover
-      ) 
-  VALUES (
-      '{$first_name}', 
-      '{$second_name}', 
-      '{$last_name}', 
-      '{$title}', 
-      '{$inhalt}', 
-      '{$description}', 
-      '{$schrank_num}', 
-      '{$regal_num}',
-      '{$upload_filename}'
-      );
-";
+// Вставка изображения в таблицу images
+$image = $_FILES[$image_fieldname];
+$image_filename = $image['name'];
+$image_info = getimagesize($image['tmp_name']);
+$image_mime_type = $image_info['mime'];
+$image_size = $image['size'];
+$image_data = file_get_contents($image['tmp_name']);
+
+$insert_image_sql = sprintf(
+    "INSERT INTO images (
+        filename,
+        mime_type,
+        file_size,
+        image_data
+    )
+    VALUES (
+        '%s',
+        '%s',
+        '%d',
+        '%s'
+    );",
+    mysqli_real_escape_string($mysqli, $image_filename),
+    mysqli_real_escape_string($mysqli, $image_mime_type),
+    mysqli_real_escape_string($mysqli, $image_size),
+    mysqli_real_escape_string($mysqli, $image_data)
+);
+mysqli_query($mysqli, $insert_image_sql);
+
+$insert_sql = sprintf(
+    "INSERT INTO autors (
+        first_name, 
+        second_name, 
+        last_name,
+        title, 
+        inhalt, 
+        description, 
+        schrank_num, 
+        regal_num,
+        cover
+    ) 
+    VALUES (
+        '%s', 
+        '%s', 
+        '%s', 
+        '%s', 
+        '%s', 
+        '%s', 
+        '%s', 
+        '%s',
+        '%d'
+    );",
+    mysqli_real_escape_string($mysqli, $first_name),
+    mysqli_real_escape_string($mysqli, $second_name),
+    mysqli_real_escape_string($mysqli, $last_name),
+    mysqli_real_escape_string($mysqli, $title),
+    mysqli_real_escape_string($mysqli, $inhalt),
+    mysqli_real_escape_string($mysqli, $description),
+    mysqli_real_escape_string($mysqli, $schrank_num),
+    mysqli_real_escape_string($mysqli, $regal_num),
+    mysqli_insert_id($mysqli)
+);
 mysqli_query($mysqli, $insert_sql) or die(mysqli_error($mysqli));
+
+$autor_id = mysqli_insert_id($mysqli);
 
 header("Location: showBuch.php?autor_id=" . mysqli_insert_id($mysqli));
 exit();

@@ -13,7 +13,9 @@ if ($result) {
     $description = preg_replace("/[\r\n]+/", "</p><p>", $row['description']);
     $schrank_num = $row['schrank_num'];
     $regal_num = $row['regal_num'];
-    $cover = get_web_path($row['cover']);
+    $cover = $row['cover'];
+    $image_query = "SELECT * FROM images WHERE image_id=" . $cover;
+    $image_result = mysqli_query($mysqli, $image_query);
 } else {
     handle_error("возникла проблема с поиском вашей информации на нашей системе.","Ошибка обнаружения пользователя с ID {$autor_id}");
 }
@@ -32,7 +34,7 @@ if ($result) {
         <h2><?php echo "{$title}"; ?></h2>
         <h3><?php echo "{$first_name} {$second_name} {$last_name}"; ?></h3>
         <div class="cover">
-            <img src="<?php echo $cover; ?>" class="cover_pic"/>
+            <img src="showImage.php?image_id=<?php echo $cover; ?>" class="cover_pic"/>
             <?php echo $description; ?>
         </div>
         <div class="inhalt">
