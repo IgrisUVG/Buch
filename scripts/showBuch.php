@@ -17,7 +17,7 @@ if ($result) {
     $image_query = "SELECT * FROM images WHERE image_id=" . $cover;
     $image_result = mysqli_query($mysqli, $image_query);
 } else {
-    handle_error("возникла проблема с поиском вашей информации на нашей системе.","Ошибка обнаружения пользователя с ID {$autor_id}");
+    handle_error("возникла проблема с поиском вашей информации на нашей системе.", "Ошибка обнаружения пользователя с ID {$autor_id}");
 }
 ?>
 <html>
@@ -35,18 +35,20 @@ if ($result) {
         <h3><?php echo "{$first_name} {$second_name} {$last_name}"; ?></h3>
         <div class="cover">
             <img src="showImage.php?image_id=<?php echo $cover; ?>" class="cover_pic"/>
-            <?php echo $description; ?>
+            <div class="description"><?php echo $description; ?></div>
         </div>
         <div class="inhalt">
             <h3>Содержание:</h3>
-            <?php echo $inhalt; ?>
+            <div><?php echo $inhalt; ?></div>
         </div>
         <div class="local">
             <p>Шкаф <?php echo $schrank_num; ?>, полка <?php echo $regal_num; ?></p>
         </div>
     </div>
-    <button onclick="window.location.href='../seite/addBuch.html'">К добавлению</button>
-    <button onclick="window.location.href='../index.html'">В начало</button>
+    <div class="keller">
+        <button onclick="window.location.href='../seite/addBuch.html'">К добавлению</button>
+        <button onclick="window.location.href='../index.php'">В начало</button>
+    </div>
 </div>
 <div id="footer"></div>
 </body>

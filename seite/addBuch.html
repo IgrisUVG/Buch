@@ -18,14 +18,14 @@
             <label for="last_name"><sup>*</sup>Фамилия:</label>
             <input type="text" id="last_name" name="last_name" size="20"/><br/>
             <label for="title"><sup>*</sup>Название:</label>
-            <input type="text" id="title" name="title" size="50"/><br/>
+            <input type="text" id="title" name="title" size="35"/><br/>
             <label for="inhalt">Содержание:</label>
-            <input type="text" id="inhalt" name="inhalt" size="50"/><br/>
+            <input type="text" id="inhalt" name="inhalt" size="35"/><br/>
             <label for="description">Описание:</label>
             <textarea id="description" name="description" cols="40" rows="10"></textarea><br/>
-            <input type="hidden" name="MAX_FILE_SIZE" value="2000000" />
+            <input type="hidden" name="MAX_FILE_SIZE" value="2000000"/>
             <label for="cover">Обложка:</label>
-            <input type="file" id="cover" name="cover" size="30" /><br/>
+            <input type="file" id="cover" name="cover" size="30"/><br/>
             <label for="schrank_num">Шкаф:</label>
             <input type="text" id="schrank_num" name="schrank_num" size="10"><br/>
             <label for="regal_num">Полка:</label>
@@ -37,6 +37,9 @@
             <input type="reset" value="Очистить и начать все сначала"/>
         </fieldset>
     </form>
+    <div class="keller">
+        <button onclick="window.location.href='../index.php'">В начало</button>
+    </div>
 </div>
 <div id="footer"></div>
 </body>

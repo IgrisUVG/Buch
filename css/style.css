@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    width: 50%;
+    width: 40%;
     margin-top: 1em;
     margin-left: auto;
     margin-right: auto;
@@ -32,6 +32,25 @@ div#content.buch {
     width: 40%;
 }
 
+.autors {
+    width: 50%;
+    margin-top: 1em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table {
+    width: 100%;
+}
+
+/*tr:nth-child(odd) {*/
+    /*background: #ccc;*/
+/*}*/
+
+td:nth-child(2) {
+    text-align: right;
+}
+
 .cover {
     /*float: left;*/
     /*width: 50%;*/
@@ -44,16 +63,21 @@ img.cover_pic {
     width: 250px;
 }
 
-/*.description {*/
-/*float: left;*/
-/*width: auto;*/
-/*}*/
+.description {
+    font-family: Georgia, 'Times New Roman', serif;
+    text-align: justify;
+    text-indent: 1em;
+    /*font-size: 1.2em;*/
+}
 
 .inhalt {
     float: left;
+    clear: both;
 }
 
 .local {
+    float: right;
+    clear: both;
     font-size: 0.8em;
 }
 
@@ -62,6 +86,14 @@ img.cover_pic {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+}
+
+.keller {
+    padding-top: 5em;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    clear: both;
 }
 
 a {
