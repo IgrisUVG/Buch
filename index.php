@@ -25,6 +25,7 @@
                         <td>
                             {$last_name} {$first_name} {$second_name}
                         </td>
+                        <!--td>Другой вариант</td-->
                         <td>
                             <a href='scripts/showBuch.php?autor_id={$autor_id}'>
                                 {$title}

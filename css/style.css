@@ -94,6 +94,20 @@ td:nth-child(2) {
     text-align: right;
 }
 
+/*Другой вариант*/
+/*td:nth-child(1) {*/
+    /*text-align: right;*/
+    /*width: 49%;*/
+/*}*/
+
+/*td:nth-child(2) {*/
+    /*width: 2%;*/
+/*}*/
+
+/*td:nth-child(3) {*/
+    /*width: 49%;*/
+/*}*/
+
 .cover {
     /*float: left;*/
     /*width: 50%;*/
