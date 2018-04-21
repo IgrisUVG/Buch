@@ -38,11 +38,16 @@ if ($result) {
             <div class="description"><?php echo $description; ?></div>
         </div>
         <div class="inhalt">
-            <h3>Содержание:</h3>
+            <?php
+            if ($inhalt) echo "<h3>Содержание:</h3>";
+            ?>
             <div><?php echo $inhalt; ?></div>
         </div>
         <div class="local">
-            <p>Шкаф <?php echo $schrank_num; ?>, полка <?php echo $regal_num; ?></p>
+            <?php
+                if ($schrank_num) echo "Шкаф {$schrank_num},";
+            ?>
+            полка <?php echo $regal_num; ?>
         </div>
     </div>
     <div class="keller button">
