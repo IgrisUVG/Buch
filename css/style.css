@@ -1,3 +1,19 @@
+@font-face {
+    font-family: 'Conv_Lester Deco';
+    src: url('../fonts/Lester Deco.eot');
+    src: local('☺'), url('../fonts/Lester Deco.woff') format('woff'), url('../fonts/Lester Deco.ttf') format('truetype'), url('../fonts/Lester Deco.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FuturaMediumC';
+    src: url('../fonts/FTR55__C.eot');
+    src: local('☺'), url('../fonts/FTR55__C.woff') format('woff'), url('../fonts/FTR55__C.ttf') format('truetype'), url('../fonts/FTR55__C.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 html {
     height: 100%;
 }
@@ -7,7 +23,7 @@ body {
     margin-top: 1em;
     margin-left: auto;
     margin-right: auto;
-    font-family: Georgia serif;
+    font-family: 'Conv_Lester Deco', Arial, sans-serif;
 }
 
 h1 {
@@ -65,7 +81,7 @@ img.cover_pic {
 }
 
 .description {
-    font-family: Georgia, 'Times New Roman', serif;
+    font-family: FuturaMediumC, Arial, sans-serif;
     text-align: justify;
     text-indent: 1em;
     /*font-size: 1.2em;*/
@@ -102,7 +118,7 @@ img.cover_pic {
     /*width: 6em;*/
     /*height: 2em;*/
     color: white;
-    font-family: Georgia, serif;
+    /*font-family: Georgia, serif;*/
     text-align: center;
     /*display: table-cell;*/
     /*vertical-align: middle;*/
