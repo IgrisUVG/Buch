@@ -127,10 +127,14 @@ img.cover_pic {
     border: hidden;
     border-radius: 1em;
 }
-.dob {
+fieldset .but {
+    font-family: FuturaMediumC, Arial, sans-serif;
+    padding: 0.1em 0.5em;
+}
+.leftb {
     border-radius: 1em 0 0 1em;
 }
-.home {
+.rightb {
     border-radius: 0 1em 1em 0;
 }
 .but:hover {
