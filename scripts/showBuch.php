@@ -9,7 +9,7 @@ if ($result) {
     $second_name = $row['second_name'];
     $last_name = $row['last_name'];
     $title = $row['title'];
-    $inhalt = $row['inhalt'];
+    $inhalt = preg_replace("/[\r\n]+/", "</p><p>", $row['inhalt']);
     $description = preg_replace("/[\r\n]+/", "</p><p>", $row['description']);
     $schrank_num = $row['schrank_num'];
     $regal_num = $row['regal_num'];

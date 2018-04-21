@@ -38,7 +38,7 @@ h3 {
     font-size: 1.2em;
 }
 
-h1, .center, .inhalt h3 {
+h1, .center{
     text-align: center;
 }
 
@@ -49,7 +49,7 @@ div#content.buch {
 }
 
 .autors {
-    width: 80%;
+    width: 510px;
     height: 30em;
     margin-top: 1em;
     margin-left: auto;
@@ -71,6 +71,7 @@ td:nth-child(2) {
 .cover {
     /*float: left;*/
     /*width: 50%;*/
+    margin-top: 0.5em;
 }
 
 img.cover_pic {
@@ -89,7 +90,12 @@ img.cover_pic {
 
 .inhalt {
     float: left;
+    margin-top: 0.5em;
     clear: both;
+}
+
+.inhalt div {
+    font-family: FuturaMediumC, Arial, sans-serif;
 }
 
 .local {
@@ -127,16 +133,20 @@ img.cover_pic {
     border: hidden;
     border-radius: 1em;
 }
+
 fieldset .but {
     font-family: FuturaMediumC, Arial, sans-serif;
     padding: 0.1em 0.5em;
 }
+
 .leftb {
     border-radius: 1em 0 0 1em;
 }
+
 .rightb {
     border-radius: 0 1em 1em 0;
 }
+
 .but:hover {
     background-color: #204d74;
     text-decoration: none;
@@ -161,13 +171,14 @@ a {
 
 a:hover {
     text-decoration: none;
-    color: darkred;
+    color: #2e6da4;
 }
 
 a:active {
     text-decoration: none;
     color: red;
 }
+
 label {
     display: block;
     float: left;
