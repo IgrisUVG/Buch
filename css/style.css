@@ -127,10 +127,16 @@ img.cover_pic {
     border: hidden;
     border-radius: 1em;
 }
-
+.dob {
+    border-radius: 1em 0 0 1em;
+}
+.home {
+    border-radius: 0 1em 1em 0;
+}
 .but:hover {
     background-color: #204d74;
     text-decoration: none;
+    color: white;
 }
 
 .but:active {
@@ -146,12 +152,18 @@ img.cover_pic {
 
 a {
     text-decoration: none;
+    color: black;
 }
 
 a:hover {
-    text-decoration: underline;
+    text-decoration: none;
+    color: darkred;
 }
 
+a:active {
+    text-decoration: none;
+    color: red;
+}
 label {
     display: block;
     float: left;

@@ -45,9 +45,11 @@ if ($result) {
             <p>Шкаф <?php echo $schrank_num; ?>, полка <?php echo $regal_num; ?></p>
         </div>
     </div>
-    <div class="keller">
-        <button onclick="window.location.href='../seite/addBuch.html'">К добавлению</button>
-        <button onclick="window.location.href='../index.php'">В начало</button>
+    <div class="keller button">
+<!--        <button onclick="window.location.href='../seite/addBuch.html'">К добавлению</button>-->
+<!--        <button onclick="window.location.href='../index.php'">В начало</button>-->
+        <a class="but dob" href="../seite/addBuch.html">К добавлению</a>
+        <a class="but home" href="../index.php">В начало</a>
     </div>
 </div>
 <div id="footer"></div>
