@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <link href="css/reset.css" rel="stylesheet"/>
     <link href="css/style.css" rel="stylesheet"/>
-    <title>Buch</title>
+    <title>Библиотека</title>
 </head>
 <body>
 <div id="header"><h1>Библиотека</h1></div>
