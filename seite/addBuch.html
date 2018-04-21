@@ -2,6 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
+    <script type="text/javascript" src="../js/jquery.js"></script>
     <link href="../css/reset.css" rel="stylesheet"/>
     <link href="../css/style.css" rel="stylesheet"/>
     <title>Библиотека</title>
@@ -23,9 +24,16 @@
             <textarea id="inhalt" name="inhalt" cols="37" rows="8"></textarea><br/>
             <label for="description">Описание:</label>
             <textarea id="description" name="description" cols="40" rows="8"></textarea><br/>
+            <!--Добавление картинки-->
             <input type="hidden" name="MAX_FILE_SIZE" value="2000000"/>
             <label for="cover">Обложка:</label>
-            <input type="file" id="cover" name="cover" size="30"/><br/>
+            <div class="file_upload">
+                <button type="button">Выбрать</button>
+                <div>Файл не выбран</div>
+                <input type="file" id="cover" name="cover" size="30"/>
+            </div>
+            <!--<input type="file" id="cover" name="cover" size="30"/><br/>-->
+            <!--|-->
             <label for="schrank_num">Шкаф:</label>
             <input type="text" id="schrank_num" name="schrank_num" size="10"><br/>
             <label for="regal_num">Полка:</label>
@@ -43,5 +51,38 @@
     </div>
 </div>
 <div id="footer"></div>
+<script>
+    var wrapper = $(".file_upload"),
+            inp = wrapper.find("input"),
+            btn = wrapper.find("button"),
+            lbl = wrapper.find("div");
+    btn.focus(function () {
+        inp.focus()
+    });
+    // Crutches for the :focus style:
+    inp.focus(function () {
+        wrapper.addClass("focus");
+    }).blur(function () {
+        wrapper.removeClass("focus");
+    });
+    var file_api = ( window.File && window.FileReader && window.FileList && window.Blob ) ? true : false;
+
+    inp.change(function () {
+        var file_name;
+        if (file_api && inp[0].files[0])
+            file_name = inp[0].files[0].name;
+        else
+            file_name = inp.val().replace("C:\\fakepath\\", '');
+
+        if (!file_name.length)
+            return;
+
+        if (lbl.is(":visible")) {
+            lbl.text(file_name);
+            btn.text("Выбрать");
+        } else
+            btn.text(file_name);
+    }).change();
+</script>
 </body>
 </html>
