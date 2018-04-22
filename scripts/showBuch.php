@@ -50,13 +50,14 @@ if ($result) {
             полка <?php echo $regal_num; ?>
         </div>
     </div>
+</div>
+<div id="footer">
     <div class="keller button">
-<!--        <button onclick="window.location.href='../seite/addBuch.html'">К добавлению</button>-->
-<!--        <button onclick="window.location.href='../index.php'">В начало</button>-->
+        <!--        <button onclick="window.location.href='../seite/addBuch.html'">К добавлению</button>-->
+        <!--        <button onclick="window.location.href='../index.php'">В начало</button>-->
         <a class="but leftb" href="../seite/addBuch.html">К добавлению</a>
         <a class="but rightb" href="../index.php">В начало</a>
     </div>
 </div>
-<div id="footer"></div>
 </body>
 </html>

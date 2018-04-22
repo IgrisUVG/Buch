@@ -50,7 +50,15 @@ div#content.buch {
     position: relative;
     width: 40%;
 }
-
+#footer {
+    position: fixed;
+    /*left: 8%;*/
+    /*right: 10%;*/
+    bottom: 0;
+    /*clear: both;*/
+    /*padding-bottom: 5px;*/
+    /*height: 25 px;*/
+}
 fieldset {
     border-color: #ddd;
     border-width: 1px;
