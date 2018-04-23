@@ -128,6 +128,11 @@ td:nth-child(2) {
     font-family: FuturaMediumC, Arial, sans-serif;
 }
 
+.inhalt td:nth-child(2) {
+    font-family: Georgia, serif;
+    font-size: 0.8em;
+}
+
 .cover {
     /*float: left;*/
     /*width: 50%;*/
