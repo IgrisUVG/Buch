@@ -129,7 +129,7 @@ td:nth-child(2) {
 }
 
 .inhalt td:nth-child(2) {
-    font-family: Georgia, serif;
+    /*font-family: Georgia, serif;*/
     font-size: 0.8em;
 }
 
