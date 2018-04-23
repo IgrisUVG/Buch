@@ -24,11 +24,6 @@ $regal_num = trim($_REQUEST['regal_num']);
 or handle_error("сервер не может получить выбранное вами изображение.",
     $php_errors[$_FILES[$image_fieldname]['error']]);
 
-// Убеждаемся, что при отправке изображения не произошла ошибка
-// Является ли этот файл результатом нормальной отправки?
-@is_uploaded_file($_FILES[$image_fieldname]['tmp_name'])
-or handle_error("вы попытались совершить безнравственный поступок. Позор!", "Запрос на отправку: файл назывался '{$_FILES[$image_fieldname]['tmp_name']}'");
-
 //Изменение размера возможно
 //if ($_FILES[$image_fieldname]['tmp_name']) {
 //    include('../com/classSimpleImage.php');
@@ -39,6 +34,11 @@ or handle_error("вы попытались совершить безнравст
 //} else {
 //    header('Location = ../seite/addBuch.html');
 //}
+
+// Убеждаемся, что при отправке изображения не произошла ошибка
+// Является ли этот файл результатом нормальной отправки?
+@is_uploaded_file($_FILES[$image_fieldname]['tmp_name'])
+or handle_error("вы попытались совершить безнравственный поступок. Позор!", "Запрос на отправку: файл назывался '{$_FILES[$image_fieldname]['tmp_name']}'");
 
 // Действительно ли это изображение?
 @getimagesize($_FILES[$image_fieldname]['tmp_name'])
