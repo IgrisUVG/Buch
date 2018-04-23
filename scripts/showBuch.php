@@ -9,7 +9,7 @@ if ($result) {
     $second_name = $row['second_name'];
     $last_name = $row['last_name'];
     $title = $row['title'];
-    $inhalt = preg_replace("/[\r\n]+/", "</p><p>", $row['inhalt']);
+    $inhalt = $row['inhalt'];
     $description = preg_replace("/[\r\n]+/", "</p><p>", $row['description']);
     $schrank_num = $row['schrank_num'];
     $regal_num = $row['regal_num'];
@@ -40,8 +40,20 @@ if ($result) {
         <div class="inhalt">
             <?php
             if ($inhalt) echo "<h3>Содержание:</h3>";
+            $pieces = preg_split("/[\r\n]+/", $inhalt);
+            foreach ($pieces as $elements) {
+                $element = explode("...", $elements);
+                echo "
+                <table>
+                    <tr>
+                        <td>{$element[0]}</td>
+                        <td>{$element[1]}</td>
+                    </tr>
+                </table>
+                ";
+            }
             ?>
-            <div><?php echo $inhalt; ?></div>
+<!--            <div>--><?php //echo $inhalt; ?><!--</div>-->
         </div>
         <div class="local">
             <?php

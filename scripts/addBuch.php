@@ -31,25 +31,24 @@ or handle_error("вы попытались совершить безнравст
 
 // Действительно ли это изображение?
 @getimagesize($_FILES[$image_fieldname]['tmp_name'])
-or handle_error("вы выбрали файл для своего фото, который не является изображением.","{$_FILES[$image_fieldname]['tmp_name']} не является файлом изображения.");
+or handle_error("вы выбрали файл для своего фото, который не является изображением.", "{$_FILES[$image_fieldname]['tmp_name']} не является файлом изображения.");
 
 //Изменение размера возможно
-if (isset($_POST['submit']) ) {
+if (isset($_POST['submit'])) {
     include('../com/classSimpleImage.php');
     $image = new SimpleImage();
     $image->load($_FILES['uploaded_image']['tmp_name']);
     $image->resizeToWidth(200);
     $image->output();
-}
-else {
+} else {
     header('Location = ../seite/addBuch.html');
 }
 
 // Присваивание файлу уникального имени
-$now = time();
-while (file_exists($upload_filename = $upload_dir . $now . '-' .  $_FILES[$image_fieldname]['name'])) {
-    $now++;
-}
+//$now = time();
+//while (file_exists($upload_filename = $upload_dir . $now . '-' .  $_FILES[$image_fieldname]['name'])) {
+//    $now++;
+//}
 
 // Вставка изображения в таблицу images
 $image = $_FILES[$image_fieldname];
