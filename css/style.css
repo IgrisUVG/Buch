@@ -23,6 +23,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     font-family: 'Conv_Lester Deco', Arial, sans-serif;
+    color: midnightblue;
 }
 
 h1 {
@@ -238,7 +239,7 @@ fieldset .but {
 
 a {
     text-decoration: none;
-    color: black;
+    color: midnightblue;
 }
 
 a:hover {
