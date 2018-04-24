@@ -43,6 +43,10 @@ h1, .center {
 }
 
 #header {
+    /*position: fixed;*/
+    /*left: 10%;*/
+    /*right: 10%;*/
+    /*margin-top: -1em;*/
     margin-bottom: 1em;
     color: navy;
 }
@@ -91,7 +95,7 @@ form input, form textarea {
     margin: 5px 0 5px 5px;
 }
 
-#namef, #namel,#titel {
+#namef, #namel, #titel {
     font-family: FuturaMediumC, Arial, sans-serif;
     font-size: 0.6em;
     color: red;
@@ -125,11 +129,11 @@ table {
 
 /*Отображение местоположения на главной*/
 /*.autors td:nth-child(1) {*/
-    /*width: 2em;*/
-    /*font-family: FuturaMediumC, Arial, sans-serif;*/
-    /*font-size: 0.6em;*/
-    /*text-align: right;*/
-    /*padding-right: 0.4em;*/
+/*width: 2em;*/
+/*font-family: FuturaMediumC, Arial, sans-serif;*/
+/*font-size: 0.6em;*/
+/*text-align: right;*/
+/*padding-right: 0.4em;*/
 /*}*/
 
 /*Отображение местоположения на главной*/
@@ -173,10 +177,22 @@ img.cover_pic {
     /*font-size: 1.2em;*/
 }
 
+.druck {
+    font-family: FuturaMediumC, Arial, sans-serif;
+    /*font-size: 0.9em;*/
+    clear: both;
+    padding-top: 0.2em;
+}
+
+.notes {
+    font-family: FuturaMediumC, Arial, sans-serif;
+    font-size: 0.9em;
+}
+
 .inhalt {
     width: 100%;
     float: left;
-    margin-top: 0.5em;
+    margin-top: 0.3em;
     clear: both;
 }
 
@@ -185,7 +201,7 @@ img.cover_pic {
 }
 
 .inhalt table {
-    width: 60%;
+    width: 25em;
     font-family: FuturaMediumC, Arial, sans-serif;
 }
 

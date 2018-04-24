@@ -13,6 +13,8 @@ if ($result) {
     $description = preg_replace("/[\r\n]+/", "</p><p>", $row['description']);
     $schrank_num = $row['schrank_num'];
     $regal_num = $row['regal_num'];
+    $druck = $row['druck'];
+    $notes = $row['notes'];
     $cover = $row['cover'];
     $image_query = "SELECT * FROM images WHERE image_id=" . $cover;
     $image_result = mysqli_query($mysqli, $image_query);
@@ -37,6 +39,8 @@ if ($result) {
             <img src="showImage.php?image_id=<?php echo $cover; ?>" class="cover_pic"/>
             <div class="description"><?php echo $description; ?></div>
         </div>
+        <div class="druck"><?php echo "{$druck}" ?></div>
+        <div class="notes"><?php echo "{$notes}" ?></div>
         <div class="inhalt">
             <?php
             if ($inhalt) echo "<h3>Содержание:</h3>";

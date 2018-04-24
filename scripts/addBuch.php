@@ -18,8 +18,8 @@ $inhalt = trim($_REQUEST['inhalt']);
 $description = trim($_REQUEST['description']);
 $schrank_num = trim($_REQUEST['schrank_num']);
 $regal_num = trim($_REQUEST['regal_num']);
-$druck = trim($_REQUEST['$druck']);
-$notes = trim($_REQUEST['$notes']);
+$druck = trim($_REQUEST['druck']);
+$notes = trim($_REQUEST['notes']);
 
 // Проверка отсутствия ошибки при отправке изображения
 ($_FILES[$image_fieldname]['error'] == 0)
