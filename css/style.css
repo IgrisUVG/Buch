@@ -247,7 +247,7 @@ fieldset .but {
     /*padding: 0.4em;*/
     /*width: 5.8em;*/
     /*height: 1.8em;*/
-    font-size: 0.9em;
+    font-size: 0.75em;
     transform: translate(0, 2px);
     -webkit-transform: translate(0, 2px); /** Chrome & Safari **/
     -o-transform: translate(0, 2px); /** Opera **/
