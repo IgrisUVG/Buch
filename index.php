@@ -11,15 +11,15 @@
 <div id="content">
     <div class="autors">
         <?php
-            require 'com/connect.php';
-            $result = $mysqli->query('SELECT * FROM autors ORDER BY last_name');
-            while ($row = $result->fetch_assoc()) {
-                $autor_id = $row['autor_id'];
-                $first_name = $row['first_name'];
-                $second_name = $row['second_name'];
-                $last_name = $row['last_name'];
-                $title = $row['title'];
-                echo "
+        require 'com/connect.php';
+        $result = $mysqli->query('SELECT * FROM autors ORDER BY last_name');
+        while ($row = $result->fetch_assoc()) {
+            $autor_id = $row['autor_id'];
+            $first_name = $row['first_name'];
+            $second_name = $row['second_name'];
+            $last_name = $row['last_name'];
+            $title = $row['title'];
+            echo "
                 <table>
                     <tr>
                         <td>
@@ -34,16 +34,15 @@
                     </tr>
                 </table>
             ";
-            }
+        }
         ?>
     </div>
 </div>
 <div id="footer">
-    <div class="button">
-        <!--button onclick="window.location.href='seite/addBuch.html'">Добавить</button-->
+    <div class="buttons">
         <a class="but" href="seite/addBuch.html">Добавить</a>
     </div>
-
+    <div id="copy">&copy; Igris</div>
 </div>
 </body>
 </html>

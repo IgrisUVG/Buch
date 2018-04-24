@@ -56,15 +56,22 @@ div#content.buch {
 }
 
 #footer {
-    /*position: fixed;*/
-    /*left: 8%;*/
-    /*right: 10%;*/
-    /*bottom: 0;*/
-    /*clear: both;*/
-    /*padding-bottom: 5px;*/
-    /*height: 25 px;*/
+    position: fixed;
+    left: 8%;
+    right: 10%;
+    bottom: 0;
+    clear: both;
+    padding-bottom: 0.1em;
+    /*height: 25px;*/
 }
-
+#copy{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: FuturaMediumC, Arial, sans-serif;
+    font-size: 0.6em;
+    text-align: right;
+}
 fieldset {
     border: solid 1px #ddd;
     padding: 10px;
@@ -119,19 +126,6 @@ td:nth-child(2) {
 /*td:nth-child(3) {*/
 /*width: 49%;*/
 /*}*/
-.inhalt {
-    width: 100%;
-}
-
-.inhalt table {
-    width: 70%;
-    font-family: FuturaMediumC, Arial, sans-serif;
-}
-
-.inhalt td:nth-child(2) {
-    /*font-family: Georgia, serif;*/
-    font-size: 0.8em;
-}
 
 .cover {
     /*float: left;*/
@@ -154,6 +148,7 @@ img.cover_pic {
 }
 
 .inhalt {
+    width: 100%;
     float: left;
     margin-top: 0.5em;
     clear: both;
@@ -163,16 +158,28 @@ img.cover_pic {
     font-family: FuturaMediumC, Arial, sans-serif;
 }
 
+.inhalt table {
+    width: 70%;
+    font-family: FuturaMediumC, Arial, sans-serif;
+}
+
+.inhalt td:nth-child(2) {
+    /*font-family: Georgia, serif;*/
+    font-size: 0.8em;
+}
+
 .local {
     float: right;
     clear: both;
     font-size: 0.8em;
+    margin-bottom: 1.5em;
 }
 
-.button {
+.buttons {
     /*margin-top: 20em;*/
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: -0.5em;
     text-align: center;
 }
 
@@ -185,7 +192,7 @@ img.cover_pic {
     display: inline-block;
     margin-left: auto;
     margin-right: auto;
-    padding: 0.5em;
+    padding: 0.3em 0.5em;
     /*width: 6em;*/
     /*height: 2em;*/
     color: white;
@@ -193,7 +200,7 @@ img.cover_pic {
     text-align: center;
     /*display: table-cell;*/
     /*vertical-align: middle;*/
-    font-size: 1em;
+    font-size: 0.8em;
     background-color: #2e6da4;
     border: hidden;
     border-radius: 1em;
