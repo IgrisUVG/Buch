@@ -19,15 +19,11 @@
             $second_name = $row['second_name'];
             $last_name = $row['last_name'];
             $title = $row['title'];
-            $schrank_num = $row['schrank_num'];
-            $regal_num = $row['regal_num'];
+//            $schrank_num = $row['schrank_num'];
+//            $regal_num = $row['regal_num'];
             echo "
                 <table>
-                    <tr>
-                        <td>";
-                            if ($schrank_num) echo $schrank_num;
-                            echo $regal_num .
-                        "</td>
+                    <tr>                        
                         <td>
                             {$last_name} {$first_name} {$second_name}
                         </td>

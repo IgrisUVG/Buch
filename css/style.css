@@ -104,9 +104,9 @@ sup {
 }
 
 .autors {
-    /*width: 510px;*/
+    width: 510px;
     /*Отображение местоположения на главной*/
-    width: 525px;
+    /*width: 525px;*/
     padding-right: 1em;
     /**/
     height: 30em;
@@ -124,17 +124,18 @@ table {
 /*}*/
 
 /*Отображение местоположения на главной*/
-.autors td:nth-child(1) {
-    width: 2em;
-    font-family: FuturaMediumC, Arial, sans-serif;
-    font-size: 0.6em;
-    text-align: right;
-    padding-right: 0.4em;
-}
+/*.autors td:nth-child(1) {*/
+    /*width: 2em;*/
+    /*font-family: FuturaMediumC, Arial, sans-serif;*/
+    /*font-size: 0.6em;*/
+    /*text-align: right;*/
+    /*padding-right: 0.4em;*/
+/*}*/
 
 /*Отображение местоположения на главной*/
-.autors td:nth-child(3),
-.inhalt td:nth-child(2) {
+/*.autors td:nth-child(3),*/
+/*.inhalt*/
+td:nth-child(2) {
     text-align: right;
 }
 
