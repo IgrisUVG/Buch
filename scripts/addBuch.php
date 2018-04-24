@@ -18,6 +18,8 @@ $inhalt = trim($_REQUEST['inhalt']);
 $description = trim($_REQUEST['description']);
 $schrank_num = trim($_REQUEST['schrank_num']);
 $regal_num = trim($_REQUEST['regal_num']);
+$druck = trim($_REQUEST['$druck']);
+$notes = trim($_REQUEST['$notes']);
 
 // Проверка отсутствия ошибки при отправке изображения
 ($_FILES[$image_fieldname]['error'] == 0)
@@ -88,6 +90,8 @@ $insert_sql = sprintf(
         description, 
         schrank_num, 
         regal_num,
+        druck,
+        notes,
         cover
     ) 
     VALUES (
@@ -99,6 +103,8 @@ $insert_sql = sprintf(
         '%s', 
         '%s', 
         '%s',
+        '%s',
+        '%s',
         '%d'
     );",
     mysqli_real_escape_string($mysqli, $first_name),
@@ -109,6 +115,8 @@ $insert_sql = sprintf(
     mysqli_real_escape_string($mysqli, $description),
     mysqli_real_escape_string($mysqli, $schrank_num),
     mysqli_real_escape_string($mysqli, $regal_num),
+    mysqli_real_escape_string($mysqli, $druck),
+    mysqli_real_escape_string($mysqli, $notes),
     mysqli_insert_id($mysqli)
 );
 mysqli_query($mysqli, $insert_sql) or die(mysqli_error($mysqli));
