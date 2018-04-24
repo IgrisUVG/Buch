@@ -91,7 +91,7 @@ form input, form textarea {
     margin: 5px 0 5px 5px;
 }
 
-#namef {
+#namef, #namel,#titel {
     font-family: FuturaMediumC, Arial, sans-serif;
     font-size: 0.6em;
     color: red;
