@@ -19,18 +19,19 @@
             $second_name = $row['second_name'];
             $last_name = $row['last_name'];
             $title = $row['title'];
+            $schrank_num = $row['schrank_num'];
+            $regal_num = $row['regal_num'];
             echo "
                 <table>
                     <tr>
                         <td>
                             {$last_name} {$first_name} {$second_name}
                         </td>
-                        <!--td>Другой вариант</td-->
                         <td>
                             <a href='scripts/showBuch.php?autor_id={$autor_id}'>
                                 {$title}
                             </a>
-                        </td>
+                        </td>                        
                     </tr>
                 </table>
             ";
