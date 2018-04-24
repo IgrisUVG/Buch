@@ -91,6 +91,12 @@ form input, form textarea {
     margin: 5px 0 5px 5px;
 }
 
+#namef {
+    font-family: FuturaMediumC, Arial, sans-serif;
+    font-size: 0.6em;
+    color: red;
+}
+
 sup {
     vertical-align: super;
     font-size: 0.6em;
@@ -125,6 +131,7 @@ table {
     text-align: right;
     padding-right: 0.4em;
 }
+
 /*Отображение местоположения на главной*/
 .autors td:nth-child(3),
 .inhalt td:nth-child(2) {

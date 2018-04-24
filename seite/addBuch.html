@@ -9,10 +9,11 @@
 <body>
 <div id="header"><h1>Библиотека</h1></div>
 <div id="content">
-    <form action="../scripts/addBuch.php" method="POST" enctype="multipart/form-data">
+    <form name="form" onsubmit="return validateForm()" action="../scripts/addBuch.php" method="POST" enctype="multipart/form-data">
         <fieldset>
             <label for="first_name"><sup>*</sup>Имя:</label>
-            <input type="text" id="first_name" name="first_name" size="20"/><br/>
+            <input type="text" id="first_name" name="first_name" size="20"/>
+            <span style='color:red' id="namef"></span><br/>
             <label for="second_name">Отчество:</label>
             <input type="text" id="second_name" name="second_name" size="20"/><br/>
             <label for="last_name"><sup>*</sup>Фамилия:</label>
@@ -51,7 +52,8 @@
     </div>
     <div id="copy">&copy; Igris</div>
 </div>
-<!--<script src="../js/jquery.js"></script>-->
+<script src="../js/validateForm.js"></script>
+<script src="../js/jquery.js"></script>
 <!--<script src="../js/file_upload_style.js"></script>-->
 </body>
 </html>
