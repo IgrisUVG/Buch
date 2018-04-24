@@ -24,6 +24,10 @@
             echo "
                 <table>
                     <tr>
+                        <td>";
+                            if ($schrank_num) echo $schrank_num;
+                            echo $regal_num .
+                        "</td>
                         <td>
                             {$last_name} {$first_name} {$second_name}
                         </td>
