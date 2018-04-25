@@ -30,7 +30,9 @@ if ($result) {
     <title>Библиотека</title>
 </head>
 <body>
-<div id="header"><h1>Библиотека</h1></div>
+<div id="headerMain">
+    <div id="header"><h1>Библиотека</h1></div>
+</div>
 <div id="content">
     <div class="buch">
         <h2><?php echo "{$title}"; ?></h2>

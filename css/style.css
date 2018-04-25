@@ -42,26 +42,28 @@ h1, .center {
     text-align: center;
 }
 
-/*#headerMain {*/
+#headerMain {
     /*width:920px;*/
-    /*height: 195px;*/
-    /*margin:0 auto;*/
-    /*z-index:0;*/
-/*}*/
+    height: 3em;
+    margin:0 auto;
+    z-index:0;
+}
 
 #header {
-    /*position: fixed;*/
-    /*left: 10%;*/
-    /*right: 10%;*/
+    position: fixed;
+    left: 30%;
+    right: 30%;
     /*margin-top: -1em;*/
     /*width:920px;*/
     /*height: 195px;*/
     /*position: fixed;*/
     /*z-index: 9999;*/
-    margin-bottom: 1em;
+    /*margin-bottom: 1em;*/
     color: navy;
 }
+#content{
 
+}
 div#content.buch {
     /*padding: 20px 5px 20px 40px;*/
     position: relative;
