@@ -14,9 +14,10 @@
     <div class="autors">
         <?php
         require 'com/connect.php';
-        $result = $mysqli->query('SELECT * FROM autors ORDER BY last_name');
+        $result = $mysqli->query('SELECT * FROM autors ORDER BY autor');
         while ($row = $result->fetch_assoc()) {
             $autor_id = $row['autor_id'];
+            $autor = $row['autor'];
             $first_name = $row['first_name'];
             $second_name = $row['second_name'];
             $last_name = $row['last_name'];
@@ -27,7 +28,7 @@
                 <table>
                     <tr>                        
                         <td>
-                            {$last_name} {$first_name} {$second_name}
+                            {$autor} {$last_name} {$first_name} {$second_name}
                         </td>
                         <td>
                             <a href='scripts/showBuch.php?autor_id={$autor_id}'>

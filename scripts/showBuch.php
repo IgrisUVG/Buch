@@ -5,6 +5,7 @@ $select_query = "SELECT * FROM autors WHERE autor_id=" . $autor_id;
 $result = mysqli_query($mysqli, $select_query);
 if ($result) {
     $row = $result->fetch_array();
+    $autor = $row['autor'];
     $first_name = $row['first_name'];
     $second_name = $row['second_name'];
     $last_name = $row['last_name'];
@@ -36,6 +37,7 @@ if ($result) {
 <div id="content">
     <div class="buch">
         <h2><?php echo "{$title}"; ?></h2>
+        <h3><?php echo "{$autor}"; ?></h3>
         <h3><?php echo "{$first_name} {$second_name} {$last_name}"; ?></h3>
         <div class="cover">
             <img src="showImage.php?image_id=<?php echo $cover; ?>" class="cover_pic"/>
