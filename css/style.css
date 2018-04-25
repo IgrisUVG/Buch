@@ -42,11 +42,22 @@ h1, .center {
     text-align: center;
 }
 
+/*#headerMain {*/
+    /*width:920px;*/
+    /*height: 195px;*/
+    /*margin:0 auto;*/
+    /*z-index:0;*/
+/*}*/
+
 #header {
     /*position: fixed;*/
     /*left: 10%;*/
     /*right: 10%;*/
     /*margin-top: -1em;*/
+    /*width:920px;*/
+    /*height: 195px;*/
+    /*position: fixed;*/
+    /*z-index: 9999;*/
     margin-bottom: 1em;
     color: navy;
 }
