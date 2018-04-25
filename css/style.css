@@ -78,8 +78,10 @@ div#content.buch {
     right: 10%;
     bottom: 0;
     clear: both;
+    padding-top: 0.1em;
     padding-bottom: 0.1em;
     /*height: 25px;*/
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
 #copy {
@@ -229,7 +231,7 @@ img.cover_pic {
     float: right;
     clear: both;
     font-size: 0.8em;
-    margin-bottom: 1.5em;
+    margin-bottom: 2.2em;
 }
 
 .buttons {
