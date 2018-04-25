@@ -45,8 +45,8 @@ h1, .center {
 #headerMain {
     /*width:920px;*/
     height: 3em;
-    margin:0 auto;
-    z-index:0;
+    margin: 0 auto;
+    z-index: 0;
 }
 
 #header {
@@ -55,11 +55,13 @@ h1, .center {
     right: 30%;
     z-index: 9999;
     color: navy;
-    background-color: rgba(255,255,255,0.8);
+    background-color: rgba(255, 255, 255, 0.8);
 }
-#content{
+
+#content {
 
 }
+
 div#content.buch {
     /*padding: 20px 5px 20px 40px;*/
     position: relative;
@@ -101,8 +103,17 @@ fieldset br {
 }
 
 form input, form textarea {
+    font-family: FuturaMediumC, Arial, sans-serif;
     margin: 5px 0 5px 5px;
     padding-left: 0.2em;
+}
+
+form input::-webkit-input-placeholder {
+    color: red;
+}
+
+form input:focus::-webkit-input-placeholder {
+    color: transparent;
 }
 
 sup {
@@ -250,6 +261,7 @@ img.cover_pic {
     background-color: #2e6da4;
     border: hidden;
     border-radius: 1em;
+    outline: none;
 }
 
 fieldset .but {
