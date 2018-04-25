@@ -53,13 +53,9 @@ h1, .center {
     position: fixed;
     left: 30%;
     right: 30%;
-    /*margin-top: -1em;*/
-    /*width:920px;*/
-    /*height: 195px;*/
-    /*position: fixed;*/
-    /*z-index: 9999;*/
-    /*margin-bottom: 1em;*/
+    z-index: 9999;
     color: navy;
+    background-color: rgba(255,255,255,0.8);
 }
 #content{
 
@@ -106,12 +102,7 @@ fieldset br {
 
 form input, form textarea {
     margin: 5px 0 5px 5px;
-}
-
-#namef, #namel, #titel {
-    font-family: FuturaMediumC, Arial, sans-serif;
-    font-size: 0.6em;
-    color: red;
+    padding-left: 0.2em;
 }
 
 sup {

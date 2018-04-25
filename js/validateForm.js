@@ -5,13 +5,19 @@ function validateForm() {
     //     return false;
     // }
     var y = document.forms['form']['last_name'].value;
-    if (y == null || y == '' || y.length==0) {
-        document.getElementById('last_name').value='Заполнить';
+    if (y == null || y == '' || y.length == 0) {
+        document.getElementById('last_name').value = 'Заполните это поле';
+        document.getElementById('last_name').style.backgroundColor = 'red';
         return false;
     }
     var z = document.forms['form']['title'].value;
-    if (z == null || z == '' || z.length==0) {
-        document.getElementById('title').value='Заполнить';
+    if (z == null || z == '' || z.length == 0) {
+        document.getElementById('title').value = 'Заполните это поле';
+        document.getElementById('title').style.backgroundColor = 'red';
         return false;
     }
 }
+document.getElementById('reset').onclick = function () {
+    document.getElementById('last_name').style.backgroundColor = '';
+    document.getElementById('title').style.backgroundColor = '';
+};

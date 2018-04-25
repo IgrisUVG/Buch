@@ -14,18 +14,13 @@
     <form name="form" onsubmit="return validateForm()" action="../scripts/addBuch.php" method="POST" enctype="multipart/form-data">
         <fieldset>
             <label for="first_name">Имя:</label>
-            <input type="text" id="first_name" name="first_name" size="20"/>
-            <span style='color:red' id="namef"></span><br/>
+            <input type="text" id="first_name" name="first_name" size="20"/><br/>
             <label for="second_name">Отчество:</label>
             <input type="text" id="second_name" name="second_name" size="20"/><br/>
             <label for="last_name"><sup>*</sup>Фамилия:</label>
-            <input type="text" id="last_name" name="last_name" size="20"/>
-            <span style='color:red' id="namel"></span><br/>
-            <br/>
+            <input type="text" id="last_name" name="last_name" size="20"/><br/>
             <label for="title"><sup>*</sup>Название:</label>
-            <input type="text" id="title" name="title" size="35"/>
-            <span style='color:red' id="titel"></span><br/>
-            <br/>
+            <input type="text" id="title" name="title" size="35"/><br/>
             <label for="inhalt">Содержание:</label>
             <textarea id="inhalt" name="inhalt" cols="37" rows="8"></textarea><br/>
             <label for="druck">Издание:</label>
@@ -62,8 +57,8 @@
     </div>
     <div id="copy">&copy; Igris</div>
 </div>
-<script src="../js/validateForm.js"></script>
 <script src="../js/jquery.js"></script>
+<script src="../js/validateForm.js"></script>
 <!--<script src="../js/file_upload_style.js"></script>-->
 </body>
 </html>

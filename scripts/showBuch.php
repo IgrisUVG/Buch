@@ -59,11 +59,11 @@ if ($result) {
                 ";
             }
             ?>
-<!--            <div>--><?php //echo $inhalt; ?><!--</div>-->
+            <!--            <div>--><?php //echo $inhalt; ?><!--</div>-->
         </div>
         <div class="local">
             <?php
-                if ($schrank_num) echo "Шкаф {$schrank_num},";
+            if ($schrank_num) echo "Шкаф {$schrank_num},";
             ?>
             полка <?php echo $regal_num; ?>
         </div>

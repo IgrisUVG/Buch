@@ -48,4 +48,15 @@
     <div id="copy">&copy; Igris</div>
 </div>
 </body>
+<script src="js/jquery.js"></script>
+<script>
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 1) {
+            $('header').addClass("sticky");
+        }
+        else {
+            $('header').removeClass("sticky");
+        }
+    });
+</script>
 </html>
