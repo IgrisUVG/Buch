@@ -51,13 +51,17 @@
 </body>
 <script src="js/jquery.js"></script>
 <script>
-    $(window).scroll(function () {
-        if ($(this).scrollTop() > 1) {
-            $('header').addClass("sticky");
+    window.onload = function tableBG() {
+        var rows = document.getElementsByTagName('tr');
+        for (var i = 0; i < rows.length; i++) {
+
+            if (i % 2 == 0) {
+                rows.item(i).style.backgroundColor = "#fff"
+            } else {
+                rows.item(i).style.backgroundColor = "#E5F5FF"
+            }
+
         }
-        else {
-            $('header').removeClass("sticky");
-        }
-    });
+    }
 </script>
 </html>
