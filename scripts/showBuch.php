@@ -28,7 +28,7 @@ if ($result) {
     <meta charset="UTF-8">
     <link href="../css/reset.css" rel="stylesheet"/>
     <link href="../css/style.css" rel="stylesheet"/>
-    <title>Библиотека</title>
+    <title><?php echo "{$title}"; ?> || Библиотека</title>
 </head>
 <body>
 <div id="headerMain">
