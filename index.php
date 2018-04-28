@@ -40,6 +40,7 @@
             ";
         }
         ?>
+        <div id="clear"></div>
     </div>
 </div>
 <div id="footer">

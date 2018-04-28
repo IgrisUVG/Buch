@@ -144,6 +144,11 @@ table {
     width: 100%;
 }
 
+#clear {
+    width: 100%;
+    height: 2em;
+}
+
 /*tr:nth-child(odd) {*/
 /*background: #E5F3FF;*/
 /*}*/
@@ -231,9 +236,11 @@ img.cover_pic {
     /*width: 27em;*/
     font-family: FuturaMediumC, Arial, sans-serif;
 }
-.inhalt td:nth-child(1){
+
+.inhalt td:nth-child(1) {
     padding-right: 0.3em;
 }
+
 .inhalt td:nth-child(2) {
     /*font-family: Georgia, serif;*/
     font-size: 0.8em;
