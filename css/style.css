@@ -51,15 +51,25 @@ h1, .center {
 
 #header {
     position: fixed;
-    left: 30%;
-    right: 30%;
+    left: 20%;
+    right: 20%;
     z-index: 9999;
     color: navy;
     background-color: rgba(255, 255, 255, 0.8);
 }
 
-#content {
+#buchDataMain {
+    height: 3em;
+    margin: 0 auto;
+    z-index: 0;
+}
 
+#buchData {
+    position: fixed;
+    width: 40%;
+    z-index: 10000;
+    background-color: rgba(255, 255, 255, 0.8);
+    /*margin-top: -0.7em;*/
 }
 
 div#content.buch {
@@ -81,6 +91,9 @@ div#content.buch {
     padding-top: 0.1em;
     padding-bottom: 0.1em;
     /*height: 25px;*/
+}
+
+.footer {
     background-color: rgba(255, 255, 255, 0.8);
 }
 
@@ -191,7 +204,7 @@ td:nth-child(2) {
 .cover {
     /*float: left;*/
     /*width: 50%;*/
-    margin-top: 0.5em;
+    /*margin-top: 0.5em;*/
 }
 
 img.cover_pic {
@@ -224,7 +237,7 @@ img.cover_pic {
     width: 100%;
     float: left;
     margin-top: 0.3em;
-    margin-bottom: 0.3em;
+    margin-bottom: 2.7em;
     clear: both;
 }
 
@@ -246,11 +259,22 @@ img.cover_pic {
     font-size: 0.8em;
 }
 
+#localMain {
+    position: fixed;
+    left: 30%;
+    right: 30%;
+    clear: both;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
 .local {
     float: right;
     clear: both;
     font-size: 0.8em;
-    margin-bottom: 2.2em;
+    margin-bottom: 1.5em;
+    z-index: 10000;
+    background-color: white;
 }
 
 .buttons {

@@ -43,7 +43,7 @@
         <div id="clear"></div>
     </div>
 </div>
-<div id="footer">
+<div id="footer" class="footer">
     <div class="buttons">
         <a class="but" href="seite/addBuch.html">Добавить</a>
     </div>

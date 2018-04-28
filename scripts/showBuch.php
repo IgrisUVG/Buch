@@ -36,9 +36,13 @@ if ($result) {
 </div>
 <div id="content">
     <div class="buch">
-        <h2><?php echo "{$title}"; ?></h2>
-        <h3><?php echo "{$autor}"; ?></h3>
-        <h3><?php echo "{$first_name} {$second_name} {$last_name}"; ?></h3>
+        <div id="buchDataMain">
+            <div id="buchData">
+                <h2><?php echo "{$title}"; ?></h2>
+                <h3><?php echo "{$autor}"; ?></h3>
+                <!--        <h3>--><?php //echo "{$first_name} {$second_name} {$last_name}"; ?><!--</h3>-->
+            </div>
+        </div>
         <div class="cover">
             <img src="showImage.php?image_id=<?php echo $cover; ?>" class="cover_pic"/>
             <div class="description"><?php echo $description; ?></div>
@@ -63,12 +67,14 @@ if ($result) {
             ?>
             <!--            <div>--><?php //echo $inhalt; ?><!--</div>-->
         </div>
-        <div class="local">
-            <?php
-            if ($schrank_num) echo "Шкаф {$schrank_num},";
-            ?>
-            полка <?php echo $regal_num; ?>
-        </div>
+    </div>
+</div>
+<div id="localMain">
+    <div class="local">
+        <?php
+        if ($schrank_num) echo "Шкаф {$schrank_num},";
+        ?>
+        полка <?php echo $regal_num; ?>
     </div>
 </div>
 <div id="footer">
