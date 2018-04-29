@@ -10,7 +10,7 @@
 <div id="headerMain">
     <div id="header"><h1>Библиотека</h1></div>
 </div>
-<div id="content">
+<!--<div id="content">-->
     <div class="autors">
         <?php
         require 'com/connect.php';
@@ -42,7 +42,7 @@
         ?>
         <div id="clear"></div>
     </div>
-</div>
+<!--</div>-->
 <div id="footer" class="footer">
     <div class="buttons">
         <a class="but" href="seite/addBuch.html">Добавить</a>

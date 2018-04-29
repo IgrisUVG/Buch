@@ -19,7 +19,7 @@ html {
 }
 
 body {
-    width: 40%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     font-family: 'Conv_Lester Deco', Arial, sans-serif;
@@ -57,7 +57,10 @@ h1, .center {
     color: navy;
     background-color: rgba(255, 255, 255, 0.8);
 }
-
+#content{
+    width: 40%;
+    margin: 0 auto;
+}
 #buchDataMain {
     height: 3em;
     margin: 0 auto;
@@ -72,7 +75,7 @@ h1, .center {
     /*margin-top: -0.7em;*/
 }
 
-div#content.buch {
+.buch {
     /*padding: 20px 5px 20px 40px;*/
     position: relative;
     width: 40%;
@@ -147,7 +150,7 @@ sup {
     /*width: 525px;*/
     /*padding-right: 1em;*/
     /**/
-    height: 30em;
+    /*height: 30em;*/
     margin-top: 1em;
     margin-left: auto;
     margin-right: auto;
