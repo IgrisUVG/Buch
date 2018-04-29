@@ -20,8 +20,8 @@ html {
 
 body {
     width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+    /*margin-left: auto;*/
+    /*margin-right: auto;*/
     font-family: 'Conv_Lester Deco', Arial, sans-serif;
     color: midnightblue;
 }
@@ -78,7 +78,7 @@ h1, .center {
 .buch {
     /*padding: 20px 5px 20px 40px;*/
     position: relative;
-    width: 40%;
+    /*width: 40%;*/
 }
 
 .cover .cover_pic {
