@@ -59,6 +59,8 @@ h1, .center {
 }
 #content{
     width: 40%;
+    max-width: 600px;
+    min-width: 450px;
     margin: 0 auto;
 }
 #buchDataMain {
@@ -70,6 +72,8 @@ h1, .center {
 #buchData {
     position: fixed;
     width: 40%;
+    max-width: 600px;
+    min-width: 450px;
     z-index: 10000;
     background-color: rgba(255, 255, 255, 0.9);
     /*margin-top: -0.7em;*/
