@@ -17,9 +17,8 @@ if ($result) {
     $regal_num = $row['regal_num'];
     $druck = $row['druck'];
     $notes = $row['notes'];
-    $cover = $row['cover'];
-    $image_query = "SELECT * FROM images WHERE image_id=" . $cover;
-    $image_result = mysqli_query($mysqli, $image_query);
+//    $image_query = "SELECT * FROM images WHERE image_id=" . $cover;
+//    $image_result = mysqli_query($mysqli, $image_query);
 } else {
     handle_error("возникла проблема с поиском вашей информации на нашей системе.", "Ошибка обнаружения пользователя с ID {$autor_id}");
 }
