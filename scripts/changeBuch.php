@@ -32,28 +32,36 @@ if (
     isset($_POST['notes']) &&
     isset($_POST['schrank_num']) &&
     isset($_POST['regal_num'])
-    ) {
-    $autor = htmlentities(mysqli_real_escape_string($mysqli, $_POST['autor']));
+//        $autor_id=$_POST['autor_id'] &&
+//        $autor=$_POST['autor'] &&
+//        $title=$_POST['title'] &&
+//        $inhalt=$_POST['inhalt'] &&
+//        $druck=$_POST['druck'] &&
+//        $description=$_POST['description'] &&
+//        $notes=$_POST['notes'] &&
+//        $schrank_num=$_POST['schrank_num'] &&
+//        $regal_num=$_POST['regal_num']
+) {
+//    $autor = htmlentities(mysqli_real_escape_string($mysqli, $_POST['autor']));
     $query = "UPDATE autors SET
-              autor_id='$autor_id',
-              autor='$autor',
-              title='$title',
-              inhalt='$inhalt',
-              druck='$druck',
-              description='$description',
-              notes='$notes',
-              schrank_num='$schrank_num',
-              regal_num='$regal_num',
-              WHERE autor_id='autor_id'
+              autor_id=$autor_id,
+              autor=$autor,
+              title=$title,
+              inhalt=$inhalt,
+              druck=$druck,
+              description=$description,
+              notes=$notes,
+              schrank_num=$schrank_num,
+              regal_num=$regal_num
+              WHERE autor_id=$autor_id
              ";
-    $result = mysqli_query($mysqli, $query) or die("Ошибка " . mysqli_error($mysqli));
 
-    if ($result) {
+    $res = mysqli_query($mysqli, $query) or die("Ошибка " . mysqli_error($mysqli));
+
+    if ($res) {
         header("Location: showBuch.php?autor_id=" . $autor_id);
     }
 }
-//header("Location: showBuch.php?autor_id=" . $autor_id);
-//exit();
 ?>
 <!DOCTYPE html>
 <html>
@@ -72,12 +80,6 @@ if (
         <fieldset>
             <label for="autor">Автор:</label>
             <input type="text" id="autor" name="autor" size="41" value="<?php echo $autor ?>"/><br/>
-            <!--<label for="first_name">Имя:</label>-->
-            <!--<input type="text" id="first_name" name="first_name" size="20"/><br/>-->
-            <!--<label for="second_name">Отчество:</label>-->
-            <!--<input type="text" id="second_name" name="second_name" size="20"/><br/>-->
-            <!--<label for="last_name">Фамилия:</label>-->
-            <!--<input type="text" id="last_name" name="last_name" size="20"/><br/>-->
             <label for="title">Название:</label>
             <input type="text" id="title" name="title" size="41" value="<?php echo $title ?>"/><br/>
             <label for="inhalt">Содержание:</label>
@@ -106,7 +108,6 @@ if (
         <br/>
         <fieldset class="center">
             <input class="but" id="submit" type="submit" value="Изменить"/>
-            <!--            <input class="but rightb" id="reset" type="reset" value="Очистить и начать все сначала"/>-->
         </fieldset>
     </form>
 </div>

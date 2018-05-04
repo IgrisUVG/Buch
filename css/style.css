@@ -129,10 +129,12 @@ fieldset.center {
 fieldset br {
     clear: left;
 }
-form{
+
+form {
     width: 600px;
     margin: 0 auto;
 }
+
 form input, form textarea {
     font-family: FuturaMediumC, Arial, sans-serif;
     margin: 5px 0 5px 5px;
@@ -333,6 +335,10 @@ fieldset .but {
 
 .leftb {
     border-radius: 1em 0 0 1em;
+}
+
+.centerb {
+    border-radius: 0;
 }
 
 .rightb {

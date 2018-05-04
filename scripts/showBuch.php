@@ -80,6 +80,7 @@ if ($result) {
 <div id="footer">
     <div class="buttons">
         <a class="but leftb" href="../seite/addBuch.html">К добавлению</a>
+        <a class="but centerb" href="changeBuch.php?autor_id=<?php echo $autor_id ?>">Изменить</a>
         <a class="but rightb" href="../index.php">В начало</a>
     </div>
     <div id="copy">&copy; Igris</div>
