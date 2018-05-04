@@ -28,7 +28,9 @@
                 <table>
                     <tr>                        
                         <td>
-                            {$autor} {$last_name} {$first_name} {$second_name}
+                            <a href='scripts/showBuch.php?autor_id={$autor_id}'>
+                                {$autor}
+                            </a>
                         </td>
                         <td>
                             <a href='scripts/showBuch.php?autor_id={$autor_id}'>
