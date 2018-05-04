@@ -129,7 +129,10 @@ fieldset.center {
 fieldset br {
     clear: left;
 }
-
+form{
+    width: 600px;
+    margin: 0 auto;
+}
 form input, form textarea {
     font-family: FuturaMediumC, Arial, sans-serif;
     margin: 5px 0 5px 5px;
@@ -151,7 +154,8 @@ sup {
 }
 
 .autors {
-    width: 600px;
+    width: 705px;
+    /*width: 600px;*/
     /*Отображение местоположения на главной*/
     /*width: 525px;*/
     /*padding-right: 1em;*/
