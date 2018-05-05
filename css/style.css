@@ -278,6 +278,11 @@ img.cover_pic {
     font-size: 0.8em;
 }
 
+.traur {
+    border: solid 1px midnightblue;
+    padding: 0 1px;
+}
+
 #localMain {
     position: fixed;
     left: 30%;
