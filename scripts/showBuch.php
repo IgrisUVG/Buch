@@ -85,5 +85,21 @@ if ($result) {
     </div>
     <div id="copy">&copy; Igris</div>
 </div>
+<script src="/js/jquery.js"></script>
+<script>
+    elementBuchData = $('#buchData');
+    elementCover = $('.cover');
+    buchDataHeight = elementBuchData.css('height');
+    //    coverTop = elementCover.css('top');
+    elementCover.css('top', function (i, val) {
+        if (buchDataHeight > '45') {
+            alert(buchDataHeight);
+            return '100';
+        } else {
+            alert(elementCover.css('top'));
+            return val;
+        }
+    });
+</script>
 </body>
 </html>
