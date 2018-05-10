@@ -89,7 +89,6 @@ if ($result) {
 <script>
     elementBuchData = $('#buchData');
     elementBuchDataMain = $('#buchDataMain');
-    elementCover = $('.cover');
     buchDataHeight = elementBuchData.css('height');
     //    coverTop = elementCover.css('top');
     elementBuchDataMain.css('height', function (i, val) {
