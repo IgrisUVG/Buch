@@ -88,15 +88,14 @@ if ($result) {
 <script src="/js/jquery.js"></script>
 <script>
     elementBuchData = $('#buchData');
+    elementBuchDataMain = $('#buchDataMain');
     elementCover = $('.cover');
     buchDataHeight = elementBuchData.css('height');
     //    coverTop = elementCover.css('top');
-    elementCover.css('top', function (i, val) {
+    elementBuchDataMain.css('height', function (i, val) {
         if (buchDataHeight > '45') {
-            alert(buchDataHeight);
-            return '100';
+            return buchDataHeight;
         } else {
-            alert(elementCover.css('top'));
             return val;
         }
     });
