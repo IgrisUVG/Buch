@@ -58,6 +58,23 @@ h1, .center {
     background-color: rgba(255, 255, 255, 0.8);
 }
 
+#sort {
+    position: fixed;
+    top: 4em;
+    width: 705px;
+    /*left: 25.8%;*/
+    /*right: 25%;*/
+    font-size: 0.75em;
+}
+
+#sort tr {
+    background-color: transparent !important;
+}
+
+#sortL, #sortR {
+    cursor: pointer;
+}
+
 #content {
     width: 40%;
     max-width: 600px;
