@@ -14,12 +14,12 @@ while ($row = $result->fetch_assoc()) {
         <table>
             <tr>                        
                 <td>
-                    <a href='showBuch.php?autor_id={$autor_id}'>
+                    <a href='scripts/showBuch.php?autor_id={$autor_id}'>
                         {$autor}
                     </a>
                 </td>
                 <td>
-                    <a href='showBuch.php?autor_id={$autor_id}'>
+                    <a href='scripts/showBuch.php?autor_id={$autor_id}'>
                         {$title}
                     </a>
                 </td>                        

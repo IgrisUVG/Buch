@@ -109,7 +109,7 @@ mysqli_close($mysqli);
 ?>
 <div id="footer">
     <div class="buttons">
-        <a class="but" href="../index.php">В начало</a>
+        <a class="but" href="../index.html">В начало</a>
     </div>
     <div id="copy">&copy; Igris</div>
 </div>
