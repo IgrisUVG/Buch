@@ -4,6 +4,8 @@ test/
 *.iml
 *.log
 *.iml
+*.sql
 *.zip
 adminer.php
 test.php
+info.php
