@@ -52,12 +52,15 @@
 </script>
 <script>
     $(document).ready(function () {
-        $(".sortClick").click(function () {
-            $(this).text($(this).text() == '▼' ? '▲' : '▼');
-        });
-        $.get('../scripts/indexBuch.php', {id: 2}, function (data) {
+        $.get('../scripts/indexBuch.php', {id: 1}, function (data) {
             $('#buch_list').html(data);
         });
+        $('.sortClick').click(function () {
+            $(this).text($(this).text() == '▼' ? '▲' : '▼');
+        });
+//        $('#sortL').click(function () {
+//            $(location).attr('href', $('.sortClick').text() == '▼' ? '?sort=autor_desc' : '?sort=autor');
+//        })
     });
 </script>
 </html>
