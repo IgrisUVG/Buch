@@ -225,7 +225,7 @@ img.cover_pic {
     font-family: FuturaMediumC, Arial, sans-serif;
     /*font-size: 0.9em;*/
     clear: both;
-    padding-top: 0.2em;
+    padding-top: 0.4em;
 }
 
 .notes {
@@ -246,6 +246,7 @@ img.cover_pic {
 }
 
 .inhalt h3 {
+    margin-top: 0.3em;
     margin-bottom: 0.8em;
 }
 
