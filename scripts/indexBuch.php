@@ -19,8 +19,6 @@ while ($row = $result->fetch_assoc()) {
     $second_name = $row['second_name'];
     $last_name = $row['last_name'];
     $title = $row['title'];
-//            $schrank_num = $row['schrank_num'];
-//            $regal_num = $row['regal_num'];
     echo "
         <table>
             <tr>                        

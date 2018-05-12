@@ -71,7 +71,7 @@ h1, .center {
     background-color: transparent !important;
 }
 
-#sortL, #sortR {
+.sortClick {
     cursor: pointer;
 }
 
