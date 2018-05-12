@@ -245,6 +245,10 @@ img.cover_pic {
     font-family: FuturaMediumC, Arial, sans-serif;
 }
 
+.inhalt h3 {
+    margin-bottom: 0.8em;
+}
+
 .inhalt table {
     /*width: 27em;*/
     font-family: FuturaMediumC, Arial, sans-serif;
