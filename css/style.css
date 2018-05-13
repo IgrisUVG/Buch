@@ -75,6 +75,10 @@ h1, .center {
     cursor: pointer;
 }
 
+#sort span {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
 #content {
     width: 40%;
     max-width: 600px;
