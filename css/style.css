@@ -225,6 +225,10 @@ img.cover_pic {
     /*font-size: 1.2em;*/
 }
 
+.description em {
+    font-style: italic;
+}
+
 .druck {
     font-family: FuturaMediumC, Arial, sans-serif;
     /*font-size: 0.9em;*/
