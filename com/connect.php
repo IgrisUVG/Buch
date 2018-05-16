@@ -1,6 +1,7 @@
 <?php
 require_once 'config.php';
 $mysqli = mysqli_connect(DATABASE_HOST, DATABASE_USERNAME, DATABASE_PASSWORD, DATABASE_NAME);
+$mysqli->set_charset("utf8");
 mysqli_query($mysqli, "SET SESSION sql_mode = ''");
 if ($mysqli->connect_errno) {
     echo "Не удалось подключиться к MySQL: (" . $mysqli->connect_errno . ") " . $mysqli->connect_error;
