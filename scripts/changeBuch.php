@@ -61,6 +61,7 @@ if (isset($_GET['autor_id'])) {
 
     if ($result && mysqli_num_rows($result) > 0) {
         $row = mysqli_fetch_row($result);
+        $autor_id = $row[0];
         $autor = $row[1];
         $first_name = $row[2];
         $second_name = $row[3];
@@ -75,8 +76,9 @@ if (isset($_GET['autor_id'])) {
 
         echo "
             <div id='content'>
-                <form name='form' onsubmit='return validateForm()' method='POST'>
+                <form action='' name='form' onsubmit='return validateForm()' method='POST'>
                     <fieldset>
+                        <input type='hidden' name='autor_id'  value='$autor_id'>
                         <label for='autor'>Автор:</label>
                         <input type='text' id='autor' name='autor' size='41' value='$autor'/><br/>
                         <label for='title'>Название:</label>
