@@ -23,15 +23,16 @@ if (
     isset($_POST['schrank_num']) &&
     isset($_POST['regal_num'])
 ) {
-    $autor_id = htmlentities(mysqli_real_escape_string($mysqli, $_POST['autor_id']));
-    $autor = htmlentities(mysqli_real_escape_string($mysqli, $_POST['autor']));
-    $title = htmlentities(mysqli_real_escape_string($mysqli, $_POST['title']));
-    $inhalt = htmlentities(mysqli_real_escape_string($mysqli, $_POST['inhalt']));
-    $druck = htmlentities(mysqli_real_escape_string($mysqli, $_POST['druck']));
-    $description = htmlentities(mysqli_real_escape_string($mysqli, $_POST['description']));
-    $notes = htmlentities(mysqli_real_escape_string($mysqli, $_POST['notes']));
-    $schrank_num = htmlentities(mysqli_real_escape_string($mysqli, $_POST['schrank_num']));
-    $regal_num = htmlentities(mysqli_real_escape_string($mysqli, $_POST['regal_num']));
+    $autor_id = mysqli_real_escape_string($mysqli, $_POST['autor_id']);
+    $autor = mysqli_real_escape_string($mysqli, $_POST['autor']);
+    $title = mysqli_real_escape_string($mysqli, $_POST['title']);
+    $inhalt = mysqli_real_escape_string($mysqli, $_POST['inhalt']);
+    $druck = mysqli_real_escape_string($mysqli, $_POST['druck']);
+    $description = mysqli_real_escape_string($mysqli, $_POST['description']);
+    $notes = mysqli_real_escape_string($mysqli, $_POST['notes']);
+    $schrank_num = mysqli_real_escape_string($mysqli, $_POST['schrank_num']);
+    $regal_num = mysqli_real_escape_string($mysqli, $_POST['regal_num']);
+
 
     $query = "UPDATE autors SET
               autor='$autor',
