@@ -189,6 +189,14 @@ sup {
     margin-right: auto;
 }
 
+.autors table tr:hover a {
+    color: #2e6da4;
+}
+
+.autors table tr:active a {
+    color: red;
+}
+
 table {
     width: 100%;
 }
