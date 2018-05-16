@@ -15,12 +15,12 @@
     <table id="sort">
         <tr>
             <td>
-                <span id="sortLup" class="sortClick">▲</span>
-                <span id="sortLdown" class="sortClick">▼</span>
+                <span id="sortLup" class="sortClick" title="По убыванию">▲</span>
+                <span id="sortLdown" class="sortClick" title="По умолчанию">▼</span>
             </td>
             <td>
-                <span id="sortRup" class="sortClick">▲</span>
-                <span id="sortRdown" class="sortClick">▼</span>
+                <span id="sortRup" class="sortClick" title="По убыванию">▲</span>
+                <span id="sortRdown" class="sortClick" title="По возрастанию">▼</span>
             </td>
         </tr>
     </table>
