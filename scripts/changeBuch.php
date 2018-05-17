@@ -5,6 +5,8 @@
     <link href="../css/reset.css" rel="stylesheet"/>
     <link href="../css/style.css" rel="stylesheet"/>
     <title>Библиотека</title>
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 </head>
 <body>
 <div id="headerMain">
