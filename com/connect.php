@@ -1,6 +1,13 @@
 <?php
 require_once 'config.php';
 $mysqli = mysqli_connect(DATABASE_HOST, DATABASE_USERNAME, DATABASE_PASSWORD, DATABASE_NAME);
+//Опытное добавление
+mysqli_query($mysqli, "SET NAMES 'utf8'");
+mysqli_query($mysqli, "SET character_set_client='utf8'");
+mysqli_query($mysqli, "SET character_set_results='");
+mysqli_query($mysqli, "SET character_set_system='utf8'");
+mysqli_query($mysqli, "SET CHARACTER SET 'utf8'");
+//
 $mysqli->set_charset("utf8");
 mysqli_query($mysqli, "SET SESSION sql_mode = ''");
 if ($mysqli->connect_errno) {
