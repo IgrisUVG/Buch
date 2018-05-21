@@ -10,11 +10,12 @@ if ($result) {
     $second_name = $row['second_name'];
     $last_name = $row['last_name'];
     $title = $row['title'];
-    $inhalt = $row['inhalt'];
-    $description = preg_replace("/[\r\n]+/", "</p><p>", $row['description']);
+    $inhalt = preg_replace('/\"([^\"]+)\"/', '&laquo;$1&raquo;', $row['inhalt']);
+    $desc_text = preg_replace('/\"([^\"]+)\"/', '&laquo;$1&raquo;', $row['description']);
+    $description = preg_replace("/[\r\n]+/", "</p><p>", $desc_text);
     $schrank_num = $row['schrank_num'];
     $regal_num = $row['regal_num'];
-    $druck = $row['druck'];
+    $druck = preg_replace('/\"([^\"]+)\"/', '&laquo;$1&raquo;', $row['druck']);
     $notes = $row['notes'];
     $cover = $row['cover'];
     $image_query = "SELECT * FROM images WHERE image_id=" . $cover;
