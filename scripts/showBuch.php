@@ -10,8 +10,8 @@ if ($result) {
     $second_name = $row['second_name'];
     $last_name = $row['last_name'];
     $title = $row['title'];
-//    $inhalt = preg_replace('/\"([^\"]+)\"/', '&laquo;$1&raquo;', $row['inhalt']);
-    $inhalt = $row['inhalt'];
+    $inhalt = preg_replace('/(?![^<]*?>)\"([^\"]+)\"/', '&laquo;$1&raquo;', $row['inhalt']);
+//    $inhalt = $row['inhalt'];
     $desc_text = preg_replace('/\"([^\"]+)\"/', '&laquo;$1&raquo;', $row['description']);
     $description = preg_replace("/[\r\n]+/", "</p><p>", $desc_text);
     $schrank_num = $row['schrank_num'];
