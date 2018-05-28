@@ -292,10 +292,18 @@ img.cover_pic {
 }
 
 #localMain {
+    height: 2em;
+    margin: 0 auto;
+    z-index: 0;
+}
+
+#local {
     position: fixed;
-    left: 27%;
-    right: 27%;
-    clear: both;
+    width: 45%;
+    max-width: 650px;
+    min-width: 450px;
+    /*z-index: 10000;*/
+    /*clear: both;*/
     bottom: 0;
     background-color: rgba(255, 255, 255, 0.8);
 }
@@ -307,6 +315,7 @@ img.cover_pic {
     margin-bottom: 1.5em;
     z-index: 10000;
     background-color: white;
+    padding: 0.1em 0;
 }
 
 .buttons {

@@ -71,14 +71,16 @@ if ($result) {
             ?>
             <!--            <div>--><?php //echo $inhalt; ?><!--</div>-->
         </div>
-    </div>
-</div>
-<div id="localMain">
-    <div class="local">
-        <?php
-        if ($schrank_num) echo "Шкаф {$schrank_num},";
-        ?>
-        полка <?php echo $regal_num; ?>
+        <div id="localMain">
+            <div id="local">
+                <div class="local">
+                    <?php
+                    if ($schrank_num) echo "Шкаф {$schrank_num},";
+                    ?>
+                    полка <?php echo $regal_num; ?>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 <div id="footer">
