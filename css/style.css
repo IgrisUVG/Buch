@@ -290,7 +290,10 @@ img.cover_pic {
     font-size: 0.8em;
     /*font-variant: small-caps;*/
 }
-
+.greece{
+    font-family: Georgia, serif;
+    font-size: 0.7em;
+}
 #localMain {
     height: 2em;
     margin: 0 auto;
