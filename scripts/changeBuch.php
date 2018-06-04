@@ -1,17 +1,4 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <link href="../css/reset.css" rel="stylesheet"/>
-    <link href="../css/style.css" rel="stylesheet"/>
-    <title>Библиотека</title>
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-</head>
-<body>
-<div id="headerMain">
-    <div id="header"><h1>Библиотека</h1></div>
-</div>
 <?php
 require '../com/connect.php';
 if (
@@ -54,13 +41,14 @@ if (
         header("Location: showBuch.php?autor_id=" . $autor_id);
     }
 }
-
+?>
+<?php
 if (isset($_GET['autor_id'])) {
     $autor_id = htmlentities(mysqli_real_escape_string($mysqli, $_GET['autor_id']));
 
     $query = "SELECT * FROM autors WHERE autor_id='$autor_id'";
 
-    $result = mysqli_query($mysqli, $query) or  die("Ошибка " . mysqli_error($mysqli));
+    $result = mysqli_query($mysqli, $query) or die("Ошибка " . mysqli_error($mysqli));
 
     if ($result && mysqli_num_rows($result) > 0) {
         $row = mysqli_fetch_row($result);
@@ -78,6 +66,19 @@ if (isset($_GET['autor_id'])) {
         $notes = $row[12];
 
         echo "
+            <html>
+            <head>
+                <meta charset=\"UTF-8\">
+                <link href=\"../css/reset.css\" rel=\"stylesheet\"/>
+                <link href=\"../css/style.css\" rel=\"stylesheet\"/>
+                <title>{$title} &diams; Библиотека</title>
+                <link rel='icon' href='/favicon.ico' type='image/x-icon'>
+                <link rel='shortcut icon' href='/favicon.ico' type='image/x-icon'>
+            </head>
+            <body>
+            <div id='headerMain'>
+                <div id='header'><h1>Библиотека</h1></div>
+            </div>
             <div id='content'>
                 <form action='' name='form' onsubmit='return validateForm()' method='POST'>
                     <fieldset>
