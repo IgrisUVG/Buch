@@ -42,6 +42,10 @@ h1, .center {
     text-align: center;
 }
 
+b {
+    font-weight: bold;
+}
+
 #headerMain {
     /*width:920px;*/
     height: 3em;

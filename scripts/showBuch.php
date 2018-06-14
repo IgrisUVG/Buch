@@ -31,7 +31,7 @@ if ($result) {
     <link href="../css/reset.css" rel="stylesheet"/>
     <link href="../css/style.css" rel="stylesheet"/>
     <title><?php echo "{$title}"; ?> &diams; Библиотека</title>
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 </head>
 <body>
@@ -91,7 +91,7 @@ if ($result) {
     </div>
     <div id="copy">&copy; Igris</div>
 </div>
-<script src="/js/jquery.js"></script>
+<script src="../js/jquery.js"></script>
 <script>
     elementBuchData = $('#buchData');
     elementBuchDataMain = $('#buchDataMain');
