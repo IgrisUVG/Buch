@@ -32,7 +32,7 @@ if ($result) {
     <link href="../css/style.css" rel="stylesheet"/>
     <title><?php echo "{$title}"; ?> &diams; Библиотека</title>
     <link rel="icon" href="../favicon.ico" type="image/x-icon">
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
 </head>
 <body>
 <div id="headerMain">
