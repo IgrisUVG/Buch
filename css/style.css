@@ -65,7 +65,7 @@ b {
 #sort {
     position: fixed;
     top: 4em;
-    width: 705px;
+    width: 700px;
     /*left: 25.8%;*/
     /*right: 25%;*/
     font-size: 0.75em;
@@ -85,6 +85,7 @@ b {
 }
 
 #content {
+    /*width: 700px;*/
     width: 45%;
     max-width: 650px;
     min-width: 450px;
