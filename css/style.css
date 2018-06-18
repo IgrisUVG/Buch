@@ -296,6 +296,10 @@ img.cover_pic {
     /*font-variant: small-caps;*/
 }
 
+.caps b {
+    font-weight: bolder;
+}
+
 .greece {
     font-family: Georgia, serif;
     font-size: 0.7em;
