@@ -282,7 +282,10 @@ img.cover_pic {
 }
 
 .inhalt td:nth-child(1) {
-    padding-right: 0.3em;
+    padding-right: 0.5em;
+    /*Добавлено для отступа*/
+    padding-left: 2.5em;
+    text-indent: -2.5em;
 }
 
 .inhalt td:nth-child(2) {
