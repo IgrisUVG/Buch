@@ -182,6 +182,10 @@ sup {
     color: red;
 }
 
+small {
+    font-size: 0.55em;
+}
+
 .autors {
     width: 705px;
     /*width: 600px;*/
