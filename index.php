@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link href="css/reset.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/jquery-ui.css">
     <link href="css/style.css" rel="stylesheet"/>
     <title>Библиотека</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
@@ -50,16 +51,19 @@
             $second_name = $row['second_name'];
             $last_name = $row['last_name'];
             $title = $row['title'];
+            $cover = $row['cover'];
+            $image_query = "SELECT * FROM images WHERE image_id=" . $cover;
+            $image_result = mysqli_query($mysqli, $image_query);
             echo "
                 <table>
                     <tr>                        
                         <td>
-                            <a href='scripts/showBuch.php?autor_id={$autor_id}'>
+                            <a href='scripts/showBuch.php?autor_id={$autor_id}' title='{$title}'>
                                 {$autor}
                             </a>
                         </td>
                         <td>
-                            <a href='scripts/showBuch.php?autor_id={$autor_id}'>
+                            <a href='scripts/showBuch.php?autor_id={$autor_id}' title='{$autor}'>
                                 {$title}
                             </a>
                         </td>                        
@@ -79,7 +83,8 @@
     <div id="copy">&copy; Igris</div>
 </div>
 </body>
-<script src="js/jquery.js"></script>
+<script src="js/jquery-1.12.4.js"></script>
+<script src="js/jquery-ui.js"></script>
 <script>
     window.onload = function tableBG() {
         var rows = document.getElementsByTagName('tr');
@@ -106,7 +111,7 @@
 //            $(location).attr('href', $('.sortClick').text() == '▼' ? '?sort=autor_desc' : '?sort=autor');
 //        })
         $('#sortLup').click(function () {
-                $(location).attr('href', 'index.php?sort=autor_desc');
+            $(location).attr('href', 'index.php?sort=autor_desc');
         });
         $('#sortLdown').click(function () {
             $(location).attr('href', 'index.php');
@@ -117,6 +122,20 @@
         $('#sortRdown').click(function () {
             $(location).attr('href', 'index.php?sort=title');
         });
+    });
+</script>
+<script>
+    $('.autors td a').tooltip({
+        track: true,
+        show: {
+            effect: "slideDown",
+            delay: 20
+        },
+        hide: {
+            effect: "fade",
+            delay: 50
+        },
+//        content: "<img src="showImage.php?image_id=<?php //echo $cover; ?>//"
     });
 </script>
 </html>

@@ -91,7 +91,7 @@ if ($result) {
     </div>
     <div id="copy">&copy; Igris</div>
 </div>
-<script src="../js/jquery.js"></script>
+<script src="../js/jquery-1.12.4.js"></script>
 <script>
     elementBuchData = $('#buchData');
     elementBuchDataMain = $('#buchDataMain');

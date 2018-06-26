@@ -119,7 +119,7 @@ mysqli_close($mysqli);
     </div>
     <div id="copy">&copy; Igris</div>
 </div>
-<script src="../js/jquery.js"></script>
+<script src="../js/jquery-1.12.4.js"></script>
 <script src="../js/validateForm.js"></script>
 <!--<script src="../js/file_upload_style.js"></script>-->
 </body>
