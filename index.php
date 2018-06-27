@@ -129,7 +129,7 @@
         track: true,
         show: {
             effect: "slideDown",
-            delay: 20
+            delay: 800
         },
         hide: {
             effect: "fade",
