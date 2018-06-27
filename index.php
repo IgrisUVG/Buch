@@ -58,12 +58,12 @@
                 <table>
                     <tr>                        
                         <td>
-                            <a href='scripts/showBuch.php?autor_id={$autor_id}' title='{$title}'>
+                            <a class='{$autor_id}' href='scripts/showBuch.php?autor_id={$autor_id}' title='{$title}'>
                                 {$autor}
                             </a>
                         </td>
                         <td>
-                            <a href='scripts/showBuch.php?autor_id={$autor_id}' title='{$autor}'>
+                            <a class='{$autor_id}' href='scripts/showBuch.php?autor_id={$autor_id}' title='{$autor}'>
                                 {$title}
                             </a>
                         </td>                        
@@ -135,7 +135,16 @@
             effect: "fade",
             delay: 50
         },
-//        content: "<img src="showImage.php?image_id=<?php //echo $cover; ?>//"
+//        content: function () {
+//            var element = $(this);
+//            if (element.className == <?php //echo $autor_id ?>//) {
+//                var imaga = '<?php
+//                    $img = 'SELECT cover FROM autors WHERE autor_id';
+//                    return $img;
+//                    ?>//';
+//                return '<img src="scripts/showImage.php?image_id=' + imaga + '>"';
+//            }
+//        }
     });
 </script>
 </html>
