@@ -182,6 +182,11 @@ sup {
     color: red;
 }
 
+.sub {
+    vertical-align: sub;
+    font-size: 0.55em;
+}
+
 small {
     font-size: 0.55em;
 }
