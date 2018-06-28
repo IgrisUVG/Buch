@@ -302,6 +302,12 @@ img.cover_pic {
     font-size: 0.8em;
 }
 
+.rimske {
+    display: inline-block;
+    width: 3em;
+    text-align: right;
+}
+
 .traur {
     border: solid 1px midnightblue;
     padding: 0 1px;
