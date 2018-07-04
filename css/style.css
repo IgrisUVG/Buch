@@ -308,6 +308,13 @@ img.cover_pic {
     text-align: right;
 }
 
+.rimskeL {
+    display: inline-block;
+    width: 0.5em;
+    margin-left: 2.2em;
+    text-align: left;
+}
+
 .traur {
     border: solid 1px midnightblue;
     padding: 0 1px;
