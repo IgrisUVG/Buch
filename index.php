@@ -77,6 +77,11 @@
 </div>
 <!--</div>-->
 <div id="footer" class="footer">
+    <div id="search">
+        <a href="#" title="Поиск">
+            <img src="loupe.svg">
+        </a>
+    </div>
     <div class="buttons">
         <a class="but" href="seite/addBuch.html">Добавить</a>
     </div>
@@ -125,7 +130,7 @@
     });
 </script>
 <script>
-    $('.autors td a').tooltip({
+    $('a').tooltip({
         track: true,
         show: {
             effect: "slideDown",
@@ -139,9 +144,9 @@
 //            var element = $(this);
 //            if (element.className == <?php //echo $autor_id ?>//) {
 //                var imaga = '<?php
-//                    $img = 'SELECT cover FROM autors WHERE autor_id';
-//                    return $img;
-//                    ?>//';
+        //                    $img = 'SELECT cover FROM autors WHERE autor_id';
+        //                    return $img;
+        //                    ?>//';
 //                return '<img src="scripts/showImage.php?image_id=' + imaga + '>"';
 //            }
 //        }
