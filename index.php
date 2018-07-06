@@ -106,15 +106,6 @@
 </script>
 <script>
     $(document).ready(function () {
-//        $.get('../scripts/indexBuch.php', {id: 1}, function (data) {
-//            $('#buch_list').html(data);
-//        });
-//        $('.sortClick').click(function () {
-//            $(this).text($(this).text() == '▼' ? '▲' : '▼');
-//        });
-//        $('#sortL').click(function () {
-//            $(location).attr('href', $('.sortClick').text() == '▼' ? '?sort=autor_desc' : '?sort=autor');
-//        })
         $('#sortLup').click(function () {
             $(location).attr('href', 'index.php?sort=autor_desc');
         });

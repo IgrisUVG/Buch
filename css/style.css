@@ -120,8 +120,8 @@ b {
 
 #footer {
     position: fixed;
-    left: 5%;
-    right: 5%;
+    left: 1px;
+    right: 1px;
     bottom: 0;
     clear: both;
     padding-top: 0.1em;
@@ -130,7 +130,18 @@ b {
 }
 
 .footer {
+    width: 705px;
+    margin-left: auto;
+    margin-right: auto;
     background-color: rgba(255, 255, 255, 0.8);
+}
+
+.foot {
+    margin-left: auto;
+    margin-right: auto;
+    width: 45%;
+    max-width: 650px;
+    min-width: 450px;
 }
 
 #search {
@@ -145,9 +156,9 @@ b {
 }
 
 #copy {
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
+    /*width: 50%;*/
+    /*margin-left: auto;*/
+    /*margin-right: auto;*/
     font-family: FuturaMediumC, Arial, sans-serif;
     font-size: 0.6em;
     text-align: right;
