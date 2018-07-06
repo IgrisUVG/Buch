@@ -106,7 +106,7 @@ if ($result) {
 </script>
 <script>
     autor_id = '<?php echo $autor_id ?>';
-    if (autor_id == '487') {
+    if (autor_id == '505') {
         $('.inhalt td:nth-child(1)').addClass('oldFont');
     }
 </script>
