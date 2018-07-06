@@ -69,7 +69,6 @@ if ($result) {
                 ";
             }
             ?>
-            <!--            <div>--><?php //echo $inhalt; ?><!--</div>-->
         </div>
         <div id="localMain">
             <div id="local">
@@ -104,6 +103,12 @@ if ($result) {
             return val;
         }
     });
+</script>
+<script>
+    autor_id = '<?php echo $autor_id ?>';
+    if (autor_id == '487') {
+        $('.inhalt td:nth-child(1)').addClass('oldFont');
+    }
 </script>
 </body>
 </html>
