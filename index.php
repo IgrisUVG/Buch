@@ -78,7 +78,7 @@
 <!--</div>-->
 <div id="footer" class="footer">
     <div id="search">
-        <a href="#" title="Поиск">
+        <a href="" title="Поиск">
             <img src="loupe.svg">
         </a>
     </div>

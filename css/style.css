@@ -140,7 +140,8 @@ b {
 }
 
 #search img {
-
+    width: 1em;
+    height: 1em;
 }
 
 #copy {
