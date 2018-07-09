@@ -5,8 +5,8 @@ div.overlay {
     background-image: url(../img/white.png);
 
     /* dimensions after the growing animation finishes  */
-    width: 600px;
-    height: 470px;
+    width: 50em;
+    height: 40em;
 
     /* initially overlay is hidden */
     display: none;
@@ -34,7 +34,7 @@ div.overlay div.close {
 
 /* container for external content. uses vertical scrollbar, if needed */
 div.wrap {
-    height: 441px;
+    /*height: 441px;*/
     overflow-y: auto;
 }
 

@@ -5,7 +5,7 @@ $(function(){
         if(this.value.length >= 2){
             $.ajax({
                 type: 'post',
-                url: '../scripts/searchBush.php', //Путь к обработчику
+                url: '../scripts/searchBuch.php', //Путь к обработчику
                 data: {'referal':this.value},
                 response: 'text',
                 success: function(data){
