@@ -356,7 +356,12 @@ img.cover_pic {
     margin-left: 2.2em;
     text-align: left;
 }
-
+.otstup{
+    display: inline-block;
+    width: 2em;
+    margin-left: 2.2em;
+    text-align: left;
+}
 .traur {
     border: solid 1px midnightblue;
     padding: 0 1px;
