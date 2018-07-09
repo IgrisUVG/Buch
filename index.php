@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <link href="css/reset.css" rel="stylesheet"/>
     <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/overlay-minimal.css">
     <link href="css/style.css" rel="stylesheet"/>
     <title>Библиотека</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
@@ -78,7 +79,7 @@
 <!--</div>-->
 <div id="footer" class="footer">
     <div id="search">
-        <a href="" title="Поиск">
+        <a href="seite/searchBuch.html" rel="#overlay" title="Поиск">
             <img src="loupe.svg">
         </a>
     </div>
@@ -86,6 +87,9 @@
         <a class="but" href="seite/addBuch.html">Добавить</a>
     </div>
     <div id="copy">&copy; Igris</div>
+</div>
+<div class="overlay" id="overlay">
+    <div class="wrap"></div>
 </div>
 </body>
 <script src="js/jquery-1.12.4.js"></script>
@@ -141,6 +145,20 @@
 //                return '<img src="scripts/showImage.php?image_id=' + imaga + '>"';
 //            }
 //        }
+    });
+</script>
+<script src="js/jquery.tools.min.js"></script>
+<script>
+    $(function () {
+        // if the function argument is given to overlay, it is assumed to be the onBeforeLoad event listener
+        $('a[rel]').overlay(function () {
+            // grab wrapper element inside content
+            var wrap = this.getContent().find('div.wrap');
+            // load only for the first time it is opened
+            if (wrap.is(':empty')) {
+                wrap.load(this.getTrigger().attr('href'));
+            }
+        });
     });
 </script>
 </html>
