@@ -27,7 +27,7 @@
         .search_result li {
             list-style: none;
             padding: 5px 10px;
-            margin: 0 0 0 -40px;
+            margin: 0;
             font-family: FuturaMediumC, Arial, sans-serif;
             color: #0896D3;
             border-bottom: 1px #ccc solid;
@@ -41,6 +41,15 @@
 
         .search_result td {
             padding-right: 1.5em;
+            text-align: left;
+        }
+
+        .search_result td:nth-child(1) {
+            width: 40%;
+        }
+
+        .search_result td:nth-child(3) {
+            width: 15%;
         }
     </style>
 </head>
