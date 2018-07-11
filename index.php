@@ -88,9 +88,11 @@
     </div>
     <div id="copy">&copy; Igris</div>
 </div>
+<!--Модальное окно-->
 <div class="overlay" id="overlay">
     <div class="wrap"></div>
 </div>
+<!---->
 </body>
 <script src="js/jquery-1.12.4.js"></script>
 <script src="js/jquery-ui.js"></script>
@@ -151,14 +153,20 @@
 <script>
     $(function () {
         // if the function argument is given to overlay, it is assumed to be the onBeforeLoad event listener
-        $('a[rel]').overlay(function () {
-            // grab wrapper element inside content
-            var wrap = this.getContent().find('div.wrap');
-            // load only for the first time it is opened
-            if (wrap.is(':empty')) {
-                wrap.load(this.getTrigger().attr('href'));
+        $('a[rel]').overlay({
+            mask: 'darkred',
+            effect: 'apple',
+
+            onBeforeLoad: function () {
+                // grab wrapper element inside content
+                var wrap = this.getContent().find('div.wrap');
+                // load only for the first time it is opened
+                if (wrap.is(':empty')) {
+                    wrap.load(this.getTrigger().attr('href'));//.css('position', 'fixed');
+                }
             }
         });
+
     });
 </script>
 </html>

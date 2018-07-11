@@ -14,13 +14,23 @@
             position: relative;
         }
 
+        .input_type {
+            position: absolute;
+            /*width: 100%;*/
+        }
+
+        .result_main {
+            margin-top: 21px;
+            overflow: hidden;
+        }
+
         .search_result {
             background: #FFF;
             border: 1px #ccc solid;
             width: 100%;
             border-radius: 4px;
             /*max-height: 100px;*/
-            overflow-y: scroll;
+            overflow: hidden;
             display: none;
         }
 
@@ -54,7 +64,11 @@
     </style>
 </head>
 <body>
-<input type="text" name="referal" placeholder="Живой поиск" value="" class="who" autocomplete="off">
-<ul class="search_result"></ul>
+<div class="input_type">
+    <input type="text" name="referal" placeholder="Живой поиск" value="" class="who" autocomplete="off">
+</div>
+<div class="result_main">
+    <ul class="search_result"></ul>
+</div>
 </body>
 </html>
