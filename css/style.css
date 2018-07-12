@@ -324,6 +324,11 @@ img.cover_pic {
     text-indent: -2.3em;
 }
 
+.inhalt td:nth-child(1) center {
+    margin-left: -3em;
+    text-indent: 0;
+}
+
 .kihot {
     padding-left: 0 !important;
     text-indent: 1.5em !important;
