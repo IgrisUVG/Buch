@@ -1,5 +1,6 @@
 .idea/
 test/
+modal/
 *.xml
 *.iml
 *.log
