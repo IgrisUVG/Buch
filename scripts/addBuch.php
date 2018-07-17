@@ -11,9 +11,9 @@ $php_errors = array(1 => 'Превышен макс. размер файла, у
     4 => 'Файл для отправки не был выбран.');
 
 $autor = trim($_REQUEST['autor']);
-$first_name = trim($_REQUEST['first_name']);
-$second_name = trim($_REQUEST['second_name']);
-$last_name = trim($_REQUEST['last_name']);
+//$first_name = trim($_REQUEST['first_name']);
+//$second_name = trim($_REQUEST['second_name']);
+//$last_name = trim($_REQUEST['last_name']);
 $title = trim($_REQUEST['title']);
 $inhalt = trim($_REQUEST['inhalt']);
 $description = trim($_REQUEST['description']);
@@ -84,9 +84,6 @@ mysqli_query($mysqli, $insert_image_sql);
 $insert_sql = sprintf(
     "INSERT INTO autors (
         autor,
-        first_name, 
-        second_name, 
-        last_name,
         title, 
         inhalt, 
         description, 
@@ -97,10 +94,7 @@ $insert_sql = sprintf(
         cover
     ) 
     VALUES (
-        '%s', 
-        '%s', 
-        '%s', 
-        '%s', 
+        '%s',
         '%s', 
         '%s', 
         '%s', 
@@ -111,9 +105,6 @@ $insert_sql = sprintf(
         '%d'
     );",
     mysqli_real_escape_string($mysqli, $autor),
-    mysqli_real_escape_string($mysqli, $first_name),
-    mysqli_real_escape_string($mysqli, $second_name),
-    mysqli_real_escape_string($mysqli, $last_name),
     mysqli_real_escape_string($mysqli, $title),
     mysqli_real_escape_string($mysqli, $inhalt),
     mysqli_real_escape_string($mysqli, $description),

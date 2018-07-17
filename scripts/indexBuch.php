@@ -15,9 +15,6 @@ $result = $mysqli->query($sql);
 while ($row = $result->fetch_assoc()) {
     $autor_id = $row['autor_id'];
     $autor = $row['autor'];
-    $first_name = $row['first_name'];
-    $second_name = $row['second_name'];
-    $last_name = $row['last_name'];
     $title = $row['title'];
     echo "
         <table>

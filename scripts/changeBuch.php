@@ -54,16 +54,13 @@ if (isset($_GET['autor_id'])) {
         $row = mysqli_fetch_row($result);
         $autor_id = $row[0];
         $autor = $row[1];
-        $first_name = $row[2];
-        $second_name = $row[3];
-        $last_name = $row[4];
-        $title = $row[5];
-        $inhalt = $row[6];
-        $description = preg_replace("/[\r\n]+/", "</p><p>", $row[7]);
-        $schrank_num = $row[9];
-        $regal_num = $row[10];
-        $druck = $row[11];
-        $notes = $row[12];
+        $title = $row[2];
+        $inhalt = $row[3];
+        $description = preg_replace("/[\r\n]+/", "</p><p>", $row[4]);
+        $schrank_num = $row[6];
+        $regal_num = $row[7];
+        $druck = $row[8];
+        $notes = $row[9];
 
         echo "
             <html>

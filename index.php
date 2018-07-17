@@ -48,9 +48,6 @@
         while ($row = $result->fetch_assoc()) {
             $autor_id = $row['autor_id'];
             $autor = $row['autor'];
-            $first_name = $row['first_name'];
-            $second_name = $row['second_name'];
-            $last_name = $row['last_name'];
             $title = $row['title'];
             $cover = $row['cover'];
             $image_query = "SELECT * FROM images WHERE image_id=" . $cover;

@@ -6,9 +6,6 @@ $result = mysqli_query($mysqli, $select_query);
 if ($result) {
     $row = $result->fetch_array();
     $autor = $row['autor'];
-    $first_name = $row['first_name'];
-    $second_name = $row['second_name'];
-    $last_name = $row['last_name'];
     $title = $row['title'];
     $inhalt = preg_replace('/(?![^<]*?>)\"([^\"]+)\"/', '&laquo;$1&raquo;', $row['inhalt']);
 //    $inhalt = $row['inhalt'];
