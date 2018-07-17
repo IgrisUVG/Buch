@@ -11,9 +11,6 @@ $php_errors = array(1 => 'Превышен макс. размер файла, у
     4 => 'Файл для отправки не был выбран.');
 
 $autor = trim($_REQUEST['autor']);
-//$first_name = trim($_REQUEST['first_name']);
-//$second_name = trim($_REQUEST['second_name']);
-//$last_name = trim($_REQUEST['last_name']);
 $title = trim($_REQUEST['title']);
 $inhalt = trim($_REQUEST['inhalt']);
 $description = trim($_REQUEST['description']);
