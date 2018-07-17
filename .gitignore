@@ -1,6 +1,7 @@
 .idea/
 test/
 modal/
+firewind/
 *.xml
 *.iml
 *.log
