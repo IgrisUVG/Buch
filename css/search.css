@@ -12,6 +12,11 @@
     font-family: FuturaMediumC, Arial, sans-serif;
 }
 
+.input_type input.schrank,
+.input_type input.regal {
+    text-align: center;
+}
+
 .input_type.input_search {
     display: inline-block;
     float: left;
