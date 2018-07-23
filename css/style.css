@@ -325,7 +325,6 @@ img.cover_pic {
     font-family: FuturaMediumC, Arial, sans-serif;
 }
 
-
 .inhalt td:nth-child(1) {
     padding-right: 0.5em;
     /*Добавлено для отступа*/
@@ -344,6 +343,14 @@ img.cover_pic {
     text-indent: 2em;
     text-align: justify;
     padding-right: 2em;
+}
+
+.inhalt td:nth-child(1) p.mechnikov {
+    font-size: 1em;
+    text-indent: 2em;
+    /*text-align: left;*/
+    margin-left: -2.3em;
+    padding-right: 1.5em;
 }
 
 .kihot {
