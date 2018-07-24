@@ -35,10 +35,10 @@
         if ($_GET['sort'] == 'autor_desc') {
             $sql .= ' ORDER BY autor DESC';
         } elseif ($_GET['sort'] == 'title') {
-            $sql .= ' ORDER BY IF (title REGEXP "^(«).+", SUBSTRING(title, 2), title)';
+            $sql .= ' ORDER BY IF (title REGEXP "^([«…]).+", SUBSTRING(title, 2), title)';
 //            $sql .= ' ORDER BY title';
         } elseif ($_GET['sort'] == 'title_desc') {
-            $sql .= ' ORDER BY IF (title REGEXP "^(«).+", SUBSTRING(title, 2), title) DESC';
+            $sql .= ' ORDER BY IF (title REGEXP "^([«…]).+", SUBSTRING(title, 2), title) DESC';
 //            $sql .= ' ORDER BY title DESC';
         } else {
             $sql .= ' ORDER BY autor';
