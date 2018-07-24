@@ -6,7 +6,7 @@ if (!empty($_POST["referal"])) {
 
     $referal = trim(strip_tags(stripcslashes(htmlspecialchars($_POST["referal"]))));
 
-    $db_referal = $mysqli->query("SELECT * FROM autors WHERE autor LIKE '%$referal%' OR title LIKE '%$referal%' OR description LIKE '%$referal%' OR inhalt LIKE '%$referal%'")
+    $db_referal = $mysqli->query("SELECT * FROM autors WHERE autor LIKE '%$referal%' OR title LIKE '%$referal%' OR description LIKE '%$referal%' OR inhalt LIKE '%$referal%' OR notes LIKE '%$referal%'")
     or die('Ошибка №' . __LINE__ . '<br>Обратитесь к администратору сайта пожалуйста, сообщив номер ошибки.');
 
     while ($row = $db_referal->fetch_array()) {
