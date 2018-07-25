@@ -106,9 +106,13 @@ if ($result) {
     if (autor_id == '504' || autor_id == '50' || autor_id == '327' || autor_id == '525') {
         $('.inhalt td').addClass('oldFont');
     }
-//    if (autor_id == '512' || autor_id == '513') {
-//        $('.inhalt td:nth-child(1)').addClass('kihot');
-//    }
+    //    if (autor_id == '512' || autor_id == '513') {
+    //        $('.inhalt td:nth-child(1)').addClass('kihot');
+    //    }
+    if (autor_id == '601') {
+        $('.inhalt td:nth-child(2)').addClass('kareninaR');
+        $('.inhalt td:nth-child(1) center').addClass('kareninaC');
+    }
 </script>
 </body>
 </html>
