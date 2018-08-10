@@ -261,6 +261,8 @@ table {
 
 td em {
     font-style: italic;
+    /*font-weight: 500;*/
+    font-family: Verdana sans-serif;
 }
 
 td b {
