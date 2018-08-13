@@ -8,8 +8,44 @@
 
 @font-face {
     font-family: 'FuturaMediumC';
-    src: url('../fonts/FTR55__C.eot');
-    src: local('☺'), url('../fonts/FTR55__C.woff') format('woff'), url('../fonts/FTR55__C.ttf') format('truetype'), url('../fonts/FTR55__C.svg') format('svg');
+    src: url('../fonts/FuturaMediumC.eot');
+    src: local('Futura Medium Cyrillic'), local('FuturaMediumC'),
+    url('../fonts/FuturaMediumC.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/FuturaMediumC.woff') format('woff'),
+    url('../fonts/FuturaMediumC.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FuturaMediumC';
+    src: url('../fonts/FuturaMediumC-Italic.eot');
+    src: local('Futura Medium Italic Cyrillic'), local('FuturaMediumC-Italic'),
+    url('../fonts/FuturaMediumC-Italic.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/FuturaMediumC-Italic.woff') format('woff'),
+    url('../fonts/FuturaMediumC-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'FuturaBookC';
+    src: url('../fonts/FuturaBookC-Italic.eot');
+    src: local('Futura Book Italic Cyrillic'), local('FuturaBookC-Italic'),
+    url('../fonts/FuturaBookC-Italic.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/FuturaBookC-Italic.woff') format('woff'),
+    url('../fonts/FuturaBookC-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'FuturaBookC';
+    src: url('../fonts/FuturaBookC.eot');
+    src: local('Futura Book Cyrillic'), local('FuturaBookC'),
+    url('../fonts/FuturaBookC.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/FuturaBookC.woff') format('woff'),
+    url('../fonts/FuturaBookC.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -262,8 +298,8 @@ table {
 td em {
     font-style: italic;
     /*font-weight: 600;*/
-    font-family: Verdana sans-serif;
-    font-size: 0.9em;
+    font-family: FuturaMediumC-Italic, sans-serif;
+    font-size: 0.8em;
 }
 
 td b {
