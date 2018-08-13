@@ -306,6 +306,11 @@ td b {
     font-weight: bold;
 }
 
+td .lspacing {
+    letter-spacing: 0.1em;
+    padding-left: 0.2em;
+}
+
 td:nth-child(2) {
     text-align: right;
     vertical-align: bottom;
