@@ -449,8 +449,16 @@ img.cover_pic {
     font-size: 1.5em;
 }
 
+.big_mb {
+    font-size: 1.3em;
+}
+
 .big_m {
     font-size: 1.2em;
+}
+
+.min {
+    font-size: 0.9em;
 }
 
 .kareninaC {
