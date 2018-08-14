@@ -252,6 +252,11 @@ form input:focus::-webkit-input-placeholder {
 
 sup {
     vertical-align: super;
+    font-size: 0.9em;
+}
+
+.sup_red {
+    vertical-align: super;
     font-size: 0.6em;
     color: red;
 }
