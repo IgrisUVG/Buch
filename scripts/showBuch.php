@@ -113,7 +113,7 @@ if ($result) {
         $('.inhalt td:nth-child(2)').addClass('kareninaR');
         $('.inhalt td:nth-child(1) center').addClass('kareninaC');
     }
-    if (autor_id == '859' || autor_id == '860' || autor_id == '872') {
+    if (autor_id == '859' || autor_id == '860' || autor_id == '875') {
         $('.inhalt td:nth-child(1)').addClass('ohne_indent_b');
     }
 </script>
