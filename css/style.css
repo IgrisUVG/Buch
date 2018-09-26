@@ -423,6 +423,11 @@ img.cover_pic {
     text-indent: 1.5em !important;
 }
 
+.ohne_indent_b {
+    padding-left: 0 !important;
+    text-indent: 0 !important;
+}
+
 .inhalt td:nth-child(2) {
     /*font-family: Georgia, serif;*/
     font-size: 0.8em;

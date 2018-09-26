@@ -109,6 +109,9 @@ if ($result) {
     //    if (autor_id == '512' || autor_id == '513') {
     //        $('.inhalt td:nth-child(1)').addClass('kihot');
     //    }
+    if (autor_id == '872') {
+        $('.inhalt td:nth-child(1)').addClass('ohne_indent_b');
+    }
     if (autor_id == '601') {
         $('.inhalt td:nth-child(2)').addClass('kareninaR');
         $('.inhalt td:nth-child(1) center').addClass('kareninaC');
