@@ -323,6 +323,10 @@ td .lspacing {
     /*padding-left: 0.2em;*/
 }
 
+td .lspacing_big {
+    letter-spacing: 0.3em;
+}
+
 td:nth-child(2) {
     text-align: right;
     vertical-align: bottom;
@@ -534,7 +538,7 @@ img.cover_pic {
 
 .caps {
     font-size: 0.8em;
-    /*font-variant: small-caps;*/
+    font-variant: small-caps;
 }
 
 .caps b {
