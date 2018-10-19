@@ -103,7 +103,7 @@ if ($result) {
 </script>
 <script>
     autor_id = '<?php echo $autor_id ?>';
-    if (autor_id == '504' || autor_id == '50' || autor_id == '327' || autor_id == '525' || autor_id == '689' || autor_id == '754' || autor_id == '755' || autor_id == '756') {
+    if (autor_id == '504' || autor_id == '50' || autor_id == '327' || autor_id == '525' || autor_id == '689' || autor_id == '754' || autor_id == '755' || autor_id == '756' || autor_id == '1011') {
         $('.inhalt td').addClass('oldFont');
     }
     //    if (autor_id == '512' || autor_id == '513') {
