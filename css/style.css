@@ -207,10 +207,14 @@ b {
     height: 1em;
 }
 
+#counting {
+    float: left;
+    font-family: FuturaMediumC, Arial, sans-serif;
+    font-size: 0.6em;
+    font-weight: bold;
+}
+
 #copy {
-    /*width: 50%;*/
-    /*margin-left: auto;*/
-    /*margin-right: auto;*/
     font-family: FuturaMediumC, Arial, sans-serif;
     font-size: 0.6em;
     text-align: right;

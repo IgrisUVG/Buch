@@ -31,7 +31,6 @@
     <div id="buch_list" class="autors">
         <?php
         require 'com/connect.php';
-        $count = 'SELECT COUNT(*) FROM autors';
         $sql = 'SELECT * FROM autors';
         if ($_GET['sort'] == 'autor_desc') {
             $sql .= ' ORDER BY autor DESC';
@@ -81,9 +80,13 @@
             <img src="loupe.svg">
         </a>
     </div>
-    <!--    <div class="counting">-->
-<!--    --><?php //echo "{$count}"; ?>
-    <!--    </div>-->
+    <div id="counting">
+        <?php
+        $count_id = $mysqli->query('SELECT count(*) FROM autors');
+        $count_fin = $count_id->fetch_array();
+        echo $count_fin[0];
+        ?>
+    </div>
     <div class="buttons">
         <a class="but" href="seite/addBuch.html">Добавить</a>
     </div>
