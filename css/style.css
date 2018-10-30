@@ -532,6 +532,13 @@ img.cover_pic {
     text-align: left;
 }
 
+.marriet {
+    display: inline-block;
+    width: 3.5em;
+    margin-left: 2.3em;
+    text-align: left;
+}
+
 .otstup {
     display: inline-block;
     width: 2em;
