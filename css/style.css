@@ -427,6 +427,16 @@ img.cover_pic {
     margin-left: -1em;
 }
 
+.inhalt td:nth-child(1) p.ohne_indent_margin {
+    /*display: inline-block;*/
+    /*float: left;*/
+    font-size: 1em;
+    text-indent: 0;
+    text-align: justify;
+    padding-right: 2em;
+    margin-left: 4.5em;
+}
+
 .inhalt td:nth-child(1) p.ohne_indent_min {
     font-size: 0.9em;
     text-indent: 0;
@@ -534,8 +544,9 @@ img.cover_pic {
 
 .marriet {
     display: inline-block;
-    width: 3.6em;
-    margin-left: 2.3em;
+    float: left;
+    width: 4.5em;
+    /*margin-left: 2.3em;*/
     text-align: left;
 }
 
