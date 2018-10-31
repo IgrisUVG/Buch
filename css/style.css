@@ -431,9 +431,10 @@ img.cover_pic {
     /*display: inline-block;*/
     /*float: left;*/
     font-size: 1em;
+    line-height: 1.2;
     text-indent: 0;
     text-align: justify;
-    padding-right: 2em;
+    padding-right: 0.5em;
     margin-left: 4.5em;
 }
 
