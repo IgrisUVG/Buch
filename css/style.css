@@ -492,6 +492,13 @@ img.cover_pic {
 /*width: 1em;*/
 /*}*/
 
+.timesFont, .timesFont em {
+    padding-right: 0.8em !important;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 0.85em;
+    line-height: 1.2;
+}
+
 .big {
     font-size: 1.5em;
 }

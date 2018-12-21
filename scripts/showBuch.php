@@ -109,11 +109,14 @@ if ($result) {
     //    if (autor_id == '512' || autor_id == '513') {
     //        $('.inhalt td:nth-child(1)').addClass('kihot');
     //    }
+    if (autor_id == '1137'){
+        $('.inhalt td').addClass('timesFont');
+    }
     if (autor_id == '601') {
         $('.inhalt td:nth-child(2)').addClass('kareninaR');
         $('.inhalt td:nth-child(1) center').addClass('kareninaC');
     }
-    if (autor_id == '859' || autor_id == '860' || autor_id == '875'|| autor_id == '905') {
+    if (autor_id == '859' || autor_id == '860' || autor_id == '875' || autor_id == '905') {
         $('.inhalt td:nth-child(1)').addClass('ohne_indent_b');
     }
 </script>
