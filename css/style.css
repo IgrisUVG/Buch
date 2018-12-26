@@ -311,6 +311,13 @@ td em {
     font-size: 0.8em;
 }
 
+td .em_bold {
+    font-style: italic;
+    font-weight: bolder;
+    font-family: "Times New Roman", sans-serif;
+    font-size: 1.02em;
+}
+
 td .letter {
     font-style: italic;
     font-weight: 900;
