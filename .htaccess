@@ -1,4 +1,0 @@
-DirectoryIndex /Buch/index.php
-RewriteEngine On
-RewriteCond %{REQUEST_URI} ^/index.php
-RewriteRule ^index.php(.*)$ /Buch/index.php [L]
