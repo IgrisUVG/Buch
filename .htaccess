@@ -1,0 +1,18 @@
+Options +FollowSymlinks
+
+RewriteEngine On
+
+RewriteBase /Buch/
+
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-d [OR]
+#RewriteCond %{REQUEST_URI} ^/$
+#RewriteRule ^(.*)$ /Buch/$1 [L,QSA]
+
+#RewriteRule ^(.*)$ Buch/$1 [L]
+
+#RewriteRule ^$ Buch/ [L]
+#RewriteRule ((?s).*) Buch/$1 [L]
+
+#RewriteCond %{HTTP_HOST} ^localhost
+#RewriteRule ^(.*)$ http://localhost/Buch/$1 [L]

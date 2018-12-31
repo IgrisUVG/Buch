@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <link href="css/reset.css" rel="stylesheet"/>
-    <link rel="stylesheet" href="css/jquery-ui.css">
-    <link rel="stylesheet" href="css/overlay-minimal.css">
+    <link href="css/jquery-ui.css" rel="stylesheet">
+    <link href="css/overlay-minimal.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet"/>
     <title>Библиотека</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
