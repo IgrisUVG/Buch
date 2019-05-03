@@ -119,6 +119,11 @@ if ($result) {
     if (autor_id == '859' || autor_id == '860' || autor_id == '875' || autor_id == '905') {
         $('.inhalt td:nth-child(1)').addClass('ohne_indent_b');
     }
+    if (autor_id == '1203' || autor_id == '1204'){
+        $('.description').addClass('oldFont');
+        $('.druck').addClass('oldFont');
+        $('.inhalt td').addClass('oldFont');
+    }
 </script>
 </body>
 </html>
