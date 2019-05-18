@@ -557,6 +557,12 @@ img.cover_pic {
     text-align: left;
 }
 
+.paragraph {
+    display: inline-block;
+    width: 1.5em;
+    text-align: right;
+}
+
 .marriet {
     display: inline-block;
     float: left;
