@@ -561,6 +561,14 @@ img.cover_pic {
     text-align: left;
 }
 
+.rimskeL_m {
+    display: inline-block;
+    /*width: 0.5em;*/
+    margin-left: 2.3em;
+    margin-right: -0.7em;
+    text-align: left;
+}
+
 .paragraph {
     display: inline-block;
     width: 1.5em;
