@@ -569,6 +569,10 @@ img.cover_pic {
     text-align: left;
 }
 
+.rimskeBlue {
+    color: dodgerblue;
+}
+
 .paragraph {
     display: inline-block;
     width: 1.5em;
