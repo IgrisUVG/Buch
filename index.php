@@ -56,7 +56,7 @@
             $image_result = mysqli_query($mysqli, $image_query);
             echo "
                 <table>
-                    <tr>                        
+                    <tr class='{$autor_id}'>                        
                         <td>
                             <a class='{$autor_id}' href='scripts/showBuch.php?autor_id={$autor_id}' title='{$title}' data-schrank='{$schrank_num}' data-regal='{$regal_num}'>
                                 {$autor}
@@ -104,7 +104,7 @@
 <script src="js/jquery-ui.js"></script>
 <!--<script src="js/tooltip.js"></script>-->
 <script>
-    $('a').tooltip({
+    $('tr').tooltip({
         track: true,
         show: {
             effect: "slideDown",
