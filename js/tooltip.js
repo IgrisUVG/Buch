@@ -7,7 +7,14 @@ $('a').tooltip({
     hide: {
         effect: "fade",
         delay: 50
-    }//,
+    },
+    content: function () {
+        // if (this){
+        //     return '<img src="scripts/showImage.php?image_id=<?php echo $cover; ?>" class="cover_pic"/>';
+        // }
+        // return $(this).prop('title');
+        return this.getAttribute('title');
+    }
 //        content: function () {
 //            var element = $(this);
 //            if (element.className == <?php //echo $autor_id ?>//) {

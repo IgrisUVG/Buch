@@ -50,18 +50,20 @@
             $autor = $row['autor'];
             $title = $row['title'];
             $cover = $row['cover'];
+            $schrank_num = $row['schrank_num'];
+            $regal_num = $row['regal_num'];
             $image_query = "SELECT * FROM images WHERE image_id=" . $cover;
             $image_result = mysqli_query($mysqli, $image_query);
             echo "
                 <table>
                     <tr>                        
                         <td>
-                            <a class='{$autor_id}' href='scripts/showBuch.php?autor_id={$autor_id}' title='{$title}'>
+                            <a class='{$autor_id}' href='scripts/showBuch.php?autor_id={$autor_id}' title='{$title}' data-schrank='{$schrank_num}' data-regal='{$regal_num}'>
                                 {$autor}
                             </a>
                         </td>
                         <td>
-                            <a class='{$autor_id}' href='scripts/showBuch.php?autor_id={$autor_id}' title='{$autor}'>
+                            <a class='{$autor_id}' href='scripts/showBuch.php?autor_id={$autor_id}' title='{$autor}' data-schrank='{$schrank_num}' data-regal='{$regal_num}'>
                                 {$title}
                             </a>
                         </td>                        
@@ -100,7 +102,30 @@
 </body>
 <script src="js/jquery-1.12.4.js"></script>
 <script src="js/jquery-ui.js"></script>
-<script src="js/tooltip.js"></script>
+<!--<script src="js/tooltip.js"></script>-->
+<script>
+    $('a').tooltip({
+        track: true,
+        show: {
+            effect: "slideDown",
+            delay: 800
+        },
+        hide: {
+            effect: "fade",
+            delay: 50
+        },
+        content: function () {
+//            if ($(this).attr('class') == '<?php //echo $cover; ?>//')
+            if (this) {
+                var attribute = this.getAttribute('class');
+                return this.getAttribute('title') + '<br><img src="scripts/showImage.php?image_id=' + attribute + '" class="tooltip_pic"/>' + '<span class="tooltip_local">' + this.dataset.schrank + ' ' + this.dataset.regal + '</span>';
+//                return attribute;
+            }
+//             return $(this).prop('title');
+//            return this.getAttribute('title');
+        }
+    });
+</script>
 <script>
     window.onload = function tableBG() {
         var rows = document.getElementsByTagName('tr');

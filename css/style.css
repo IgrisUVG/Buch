@@ -170,6 +170,11 @@ b {
     padding-top: 0.3em;
 }
 
+.tooltip_pic {
+    width: 10em;
+    border-radius: 0.5em;
+}
+
 #footer {
     position: fixed;
     left: 1px;
@@ -640,6 +645,13 @@ img.cover_pic {
     padding: 0.1em 0;
 }
 
+.tooltip_local {
+    float: right;
+    /*clear: both;*/
+    padding-left: 1em;
+    text-align: right;
+}
+
 .buttons {
     /*margin-top: 20em;*/
     margin-left: auto;
@@ -825,9 +837,9 @@ label {
 /*}*/
 
 .ui-tooltip {
-    padding: 0.1em 0.5em;
+    padding: 0.2em 1em;
     color: midnightblue;
-    border-radius: 2em;
+    border-radius: 1em;
     font: 0.9em FuturaMediumC, Arial, sans-serif;
     box-shadow: 0 0 7px midnightblue;
 }
