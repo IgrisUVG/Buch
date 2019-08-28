@@ -104,7 +104,18 @@
 <script src="js/jquery-ui.js"></script>
 <!--<script src="js/tooltip.js"></script>-->
 <script>
-    $('tr').tooltip({
+    $('#sort, #search a').tooltip({
+        track: true,
+        show: {
+            effect: "slideDown",
+            delay: 800
+        },
+        hide: {
+            effect: "fade",
+            delay: 50
+        }
+    });
+    $('#buch_list a').tooltip({
         track: true,
         show: {
             effect: "slideDown",
