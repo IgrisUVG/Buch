@@ -648,8 +648,9 @@ img.cover_pic {
 .tooltip_local {
     float: right;
     /*clear: both;*/
-    padding-left: 1em;
-    text-align: right;
+    /*padding-left: 1em;*/
+    padding-right: 0.2em;
+    /*text-align: right;*/
 }
 
 .buttons {

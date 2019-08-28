@@ -118,7 +118,8 @@
 //            if ($(this).attr('class') == '<?php //echo $cover; ?>//')
             if (this) {
                 var attribute = this.getAttribute('class');
-                return this.getAttribute('title') + '<br><img src="scripts/showImage.php?image_id=' + attribute + '" class="tooltip_pic"/>' + '<span class="tooltip_local">' + this.dataset.schrank + ' ' + this.dataset.regal + '</span>';
+//                return this.getAttribute('title') + '<br><img src="scripts/showImage.php?image_id=' + attribute + '" class="tooltip_pic"/>' + '<span class="tooltip_local">' + this.dataset.schrank + ' ' + this.dataset.regal + '</span>';
+                return '<span class="tooltip_local">' + this.dataset.schrank + ' ' + this.dataset.regal + '</span>' + '<br><img src="scripts/showImage.php?image_id=' + attribute + '" class="tooltip_pic"/>';
 //                return attribute;
             }
 //             return $(this).prop('title');
