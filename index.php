@@ -56,7 +56,7 @@
             $image_result = mysqli_query($mysqli, $image_query);
             echo "
                 <table>
-                    <tr class='{$autor_id}'>                        
+                    <tr id='{$autor_id}'>                        
                         <td>
                             <a class='{$autor_id}' href='scripts/showBuch.php?autor_id={$autor_id}' title='{$title}' data-schrank='{$schrank_num}' data-regal='{$regal_num}'>
                                 {$autor}
