@@ -368,6 +368,10 @@ img.cover_pic {
     font-size: 0.8em;
 }
 
+.text_right {
+    text-align: right !important;
+}
+
 .glavaCent,
 .description center {
     text-indent: 0;
