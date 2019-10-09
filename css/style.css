@@ -617,9 +617,15 @@ img.cover_pic {
     font-weight: bolder;
 }
 
-.first:first-letter {
+.first {
+    display: inline-block;
+    padding-left: 2.3em;
+}
+
+.first::first-letter {
     font-weight: bold;
 }
+
 .greece {
     font-family: Georgia, serif;
     font-size: 0.7em;
