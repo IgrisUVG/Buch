@@ -394,6 +394,7 @@ img.cover_pic {
     float: left;
     margin-top: 0.3em;
     margin-bottom: 2.7em;
+    padding-bottom: 2.7em;
     clear: both;
 }
 
