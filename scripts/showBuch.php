@@ -125,7 +125,7 @@ if ($result) {
         $('.druck').addClass('oldFont');
         $('.inhalt td').addClass('oldFont');
     }
-    if (autor_id == 1733){
+    if (autor_id == 1733 || autor_id == 1740){
         $('.description p:last-child').addClass('text_right');
     }
 </script>
