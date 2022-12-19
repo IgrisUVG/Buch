@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <?php
 require '../com/connect.php';
 $autor_id = $_REQUEST['autor_id'];
@@ -9,8 +10,8 @@ if ($result) {
     $title = $row['title'];
     $inhalt = preg_replace('/(?![^<]*?>)\"([^\"]+)\"/', '&laquo;$1&raquo;', $row['inhalt']);
 //    $inhalt = $row['inhalt'];
-    $desc_text = preg_replace('/\"([^\"]+)\"/', '&laquo;$1&raquo;', $row['description']);
-    $description = preg_replace("/[\r\n]+/", "</p><p>", $desc_text);
+    $desc_text = preg_replace('/(?![^<]*?>)\"([^\"]+)\"/', '&laquo;$1&raquo;', $row['description']);
+    $description = preg_replace('/[\r\n]+/', '</p><p>', $desc_text);
     $schrank_num = $row['schrank_num'];
     $regal_num = $row['regal_num'];
     $druck = preg_replace('/\"([^\"]+)\"/', '&laquo;$1&raquo;', $row['druck']);
@@ -123,6 +124,9 @@ if ($result) {
         $('.description').addClass('oldFont');
         $('.druck').addClass('oldFont');
         $('.inhalt td').addClass('oldFont');
+    }
+    if (autor_id == 1733){
+        $('.description p:last-child').addClass('text_right');
     }
 </script>
 </body>

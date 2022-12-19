@@ -2,6 +2,7 @@
 test/
 modal/
 firewind/
+com/
 *.xml
 *.iml
 *.log
