@@ -540,6 +540,10 @@ img.cover_pic {
     font-size: 0.9em;
 }
 
+.mini {
+    font-size: 0.8em;
+}
+
 .kareninaC {
     /*display: inline-block;*/
     /*width: 100%;*/
