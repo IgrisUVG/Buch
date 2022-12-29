@@ -14,7 +14,7 @@ if ($result) {
     $description = preg_replace('/[\r\n]+/', '</p><p>', $desc_text);
     $schrank_num = $row['schrank_num'];
     $regal_num = $row['regal_num'];
-    $druck = preg_replace('/\"([^\"]+)\"/', '&laquo;$1&raquo;', $row['druck']);
+    $druck = preg_replace('/(?![^<]*?>)\"([^\"]+)\"/', '&laquo;$1&raquo;', $row['druck']);
     $notes = $row['notes'];
     $cover = $row['cover'];
     $image_query = "SELECT * FROM images WHERE image_id=" . $cover;
