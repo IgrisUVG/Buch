@@ -436,6 +436,14 @@ img.cover_pic {
     padding-right: 1.5em;
 }
 
+.inhalt td:nth-child(1) p.jacolliot {
+    font-size: 1em;
+    text-indent: 0;
+    text-align: justify;
+    padding-right: 2em;
+    margin-left: -2.4em;
+}
+
 .inhalt td:nth-child(1) p.ohne_indent {
     font-size: 1em;
     text-indent: 0;
