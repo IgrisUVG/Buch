@@ -502,6 +502,13 @@ img.cover_pic {
     line-height: 1.2;
 }
 
+.oldFont_n {
+    /*padding-right: 0.8em !important;*/
+    font-family: 'Elizabeth_tt Uni', Georgia, 'Times New Roman', serif;
+    /*font-size: 0.85em;
+    line-height: 1.2;*/
+}
+
 .oldFont em {
     padding-right: 0.8em !important;
     font-family: 'Elizabeth_tt Uni Italic', Georgia, 'Times New Roman', serif;
