@@ -121,7 +121,7 @@ if ($result) {
         $('.inhalt td:nth-child(1)').addClass('ohne_indent_b');
     }
     if (autor_id == '1203' || autor_id == '1204' || autor_id == '1782' || autor_id == '1783'){
-        $('#buchData').addClass('oldFont_n');
+        $('#buchData').wrapInner('<b></b>').addClass('oldFont_n');
         $('.description').addClass('oldFont_n');
         $('.druck').addClass('oldFont_n');
         $('.notes').addClass('oldFont_n');
@@ -130,12 +130,6 @@ if ($result) {
     if (autor_id == '1733' || autor_id == '1740'){
         $('.description p:last-child').addClass('text_right');
     }
-    /*if (autor_id == '1783'){
-        $('#buchData').addClass('oldFont_n');
-        $('.description').addClass('oldFont_n');
-        $('.druck').addClass('oldFont_n');
-        $('.inhalt td').addClass('oldFont_n');
-    }*/
 </script>
 </body>
 </html>
