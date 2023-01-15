@@ -120,7 +120,7 @@ if ($result) {
     if (autor_id == '859' || autor_id == '860' || autor_id == '875' || autor_id == '905') {
         $('.inhalt td:nth-child(1)').addClass('ohne_indent_b');
     }
-    if (autor_id == '1203' || autor_id == '1204' || autor_id == '1782' || autor_id == '1783' || autor_id == '1787' || autor_id == '1788'){
+    if (autor_id == '1203' || autor_id == '1204' || autor_id == '1782' || autor_id == '1783' || autor_id == '1787' || autor_id == '1788' || autor_id == '1789'){
         $('#buchData').wrapInner('<b></b>').addClass('oldFont_n');
         $('.description').addClass('oldFont_n');
         $('.druck').addClass('oldFont_n');
