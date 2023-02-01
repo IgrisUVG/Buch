@@ -110,7 +110,7 @@ if ($result) {
     //    if (autor_id == '512' || autor_id == '513') {
     //        $('.inhalt td:nth-child(1)').addClass('kihot');
     //    }
-    if (autor_id == '1137'){
+    if (autor_id == '1137' || autor_id == '1829' || autor_id == '1830'){
         $('.inhalt td').addClass('timesFont');
     }
     if (autor_id == '601') {
@@ -130,13 +130,13 @@ if ($result) {
     if (autor_id == '1733' || autor_id == '1740'){
         $('.description p:last-child').addClass('text_right');
     }
-    if (autor_id == '1829'){
-        $('#buchData').wrapInner('<b></b>').addClass('timesFont');
-        $('.description').addClass('timesFont');
-        $('.druck').addClass('timesFont');
-        $('.notes').addClass('timesFont');
-        $('.inhalt td').addClass('timesFont');
-    }
+    //if (autor_id == '1829'){
+    //    $('#buchData').wrapInner('<b></b>').addClass('timesFont');
+    //    $('.description').addClass('timesFont');
+    //    $('.druck').addClass('timesFont');
+    //    $('.notes').addClass('timesFont');
+    //    $('.inhalt td').addClass('timesFont');
+    //}
 </script>
 </body>
 </html>
