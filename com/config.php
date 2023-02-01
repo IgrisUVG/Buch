@@ -5,7 +5,8 @@ define("SITE_ROOT", $_SERVER['DOCUMENT_ROOT'] . "/");
 
 define("DATABASE_HOST", "localhost");
 define("DATABASE_USERNAME", "root");
-define("DATABASE_PASSWORD", "68426842");
+//define("DATABASE_PASSWORD", "68426842");
+define("DATABASE_PASSWORD", "86248624");
 define("DATABASE_NAME", "buch");
 
 if (DEBUG_MODE) {
