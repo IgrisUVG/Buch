@@ -130,6 +130,13 @@ if ($result) {
     if (autor_id == '1733' || autor_id == '1740'){
         $('.description p:last-child').addClass('text_right');
     }
+    if (autor_id == '1829'){
+        $('#buchData').wrapInner('<b></b>').addClass('timesFont');
+        $('.description').addClass('timesFont');
+        $('.druck').addClass('timesFont');
+        $('.notes').addClass('timesFont');
+        $('.inhalt td').addClass('timesFont');
+    }
 </script>
 </body>
 </html>
