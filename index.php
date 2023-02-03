@@ -41,7 +41,7 @@
             $sql .= ' ORDER BY IF (title REGEXP "^([«…]).+", SUBSTRING(title, 2), title) DESC';
 //            $sql .= ' ORDER BY title DESC';
         } elseif ($_GET['sort'] == 'autor_id') {
-            $sql .= ' ORDER BY autor_id';
+            $sql .= ' ORDER BY autor_id DESC';
         } else {
             $sql .= ' ORDER BY autor';
         }
