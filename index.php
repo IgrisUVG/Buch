@@ -40,6 +40,8 @@
         } elseif ($_GET['sort'] == 'title_desc') {
             $sql .= ' ORDER BY IF (title REGEXP "^([«…]).+", SUBSTRING(title, 2), title) DESC';
 //            $sql .= ' ORDER BY title DESC';
+        } elseif ($_GET['sort'] == 'autor_id') {
+            $sql .= ' ORDER BY autor_id';
         } else {
             $sql .= ' ORDER BY autor';
         }
@@ -82,7 +84,7 @@
             <img src="loupe.svg">
         </a>
     </div>
-    <div id="counting">
+    <div id="counting" class="sortClick" title="По АйДи">
         <?php
         $count_id = $mysqli->query('SELECT count(*) FROM autors');
         $count_fin = $count_id->fetch_array();
@@ -104,7 +106,7 @@
 <script src="js/jquery-ui.js"></script>
 <!--<script src="js/tooltip.js"></script>-->
 <script>
-    $('#sort, #search a').tooltip({
+    $('#sort, #counting, #search a').tooltip({
         track: true,
         show: {
             effect: "slideDown",
@@ -166,6 +168,9 @@
         $('#sortRdown').click(function () {
             $(location).attr('href', 'index.php?sort=title');
         });
+        $('#counting').click(function () {
+            $(location).attr('href', 'index.php?sort=autor_id');
+        })
     });
 </script>
 <script src="js/jquery.tools.min.js"></script>
