@@ -124,7 +124,8 @@ if ($result) {
         $('#buchData').wrapInner('<b></b>').addClass('oldFont_n');
         $('.description').addClass('oldFont_n');
         $('.druck').addClass('oldFont_n');
-        $('.notes').addClass('oldFont_n');
+        $('.notes').addClass('oldFont_notes');
+        $('.inhalt h3').wrapInner('<b></b>').addClass('oldFont_h3');
         $('.inhalt td').addClass('oldFont_n');
     }
     if (autor_id == '1733' || autor_id == '1740'){
