@@ -33,7 +33,7 @@
         require 'com/connect.php';
         $sql = 'SELECT * FROM autors';
         if ($_GET['sort'] == 'autor_desc') {
-            $sql .= ' ORDER BY autor DESC';
+            $sql .= ' ORDER BY IF (autor REGEXP "^([<span]).+", SUBSTRING(autor, 21), autor) DESC';
         } elseif ($_GET['sort'] == 'title') {
             $sql .= ' ORDER BY IF (title REGEXP "^([«…]).+", SUBSTRING(title, 2), title)';
 //            $sql .= ' ORDER BY title';
@@ -43,7 +43,7 @@
         } elseif ($_GET['sort'] == 'autor_id') {
             $sql .= ' ORDER BY autor_id DESC';
         } else {
-            $sql .= ' ORDER BY autor';
+            $sql .= ' ORDER BY IF (autor REGEXP "^([<span]).+", SUBSTRING(autor, 21), autor)';
         }
         //$result = $mysqli->query('SELECT * FROM autors ORDER BY autor');
         $result = $mysqli->query($sql);
