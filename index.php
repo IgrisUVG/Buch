@@ -193,4 +193,46 @@
 
     });
 </script>
+<script>
+    //Кнопка вверх как ВК
+    $('body').append('<div class="upbtn"></div>');
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            $('.upbtn').css({
+                left: '0'
+            });
+        } else {
+            $('.upbtn').css({
+                left: '-100px'
+            });
+        }
+    });
+    $('.upbtn').click(function () {
+        $('html, body').animate({
+            scrollTop: 0
+        }, 800);
+        return false;
+    });
+</script>
+<!--script>
+    //Кнопка вверх
+    $('body').append('<div class="upbtn"></div>');
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 100) {
+            $('.upbtn').css({
+                bottom: 0
+            });
+        } else {
+            $('.upbtn').css({
+                bottom: '-80px'
+            });
+        }
+    });
+    $('.upbtn').click(function() {
+        $('html, body').animate({
+            scrollTop: 0
+        }, 800);
+        return false;
+    });
+</script-->
 </html>

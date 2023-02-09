@@ -88,6 +88,7 @@ if ($result) {
     </div>
     <div id="copy" class="foot">&copy; Igris</div>
 </div>
+</body>
 <script src="../js/jquery-1.12.4.js"></script>
 <script>
     elementBuchData = $('#buchData');
@@ -142,5 +143,46 @@ if ($result) {
         $('.inhalt td:nth-child(1)').addClass('ohne_indent_min');
     }
 </script>
-</body>
+<script>
+    //Кнопка вверх как ВК
+    $('body').append('<div class="upbtn"></div>');
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            $('.upbtn').css({
+                left: '0'
+            });
+        } else {
+            $('.upbtn').css({
+                left: '-100px'
+            });
+        }
+    });
+    $('.upbtn').click(function () {
+        $('html, body').animate({
+            scrollTop: 0
+        }, 800);
+        return false;
+    });
+</script>
+<!--script>
+    //Кнопка вверх
+    $('body').append('<div class="upbtn"></div>');
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 100) {
+            $('.upbtn').css({
+                bottom: 0
+            });
+        } else {
+            $('.upbtn').css({
+                bottom: '-80px'
+            });
+        }
+    });
+    $('.upbtn').click(function() {
+        $('html, body').animate({
+            scrollTop: 0
+        }, 800);
+        return false;
+    });
+</script-->
 </html>
