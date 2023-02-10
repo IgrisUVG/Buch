@@ -107,9 +107,10 @@ b {
 
 #header {
     position: fixed;
-    left: 5%;
-    right: 5%;
-    z-index: 9999;
+    width: 100%;
+    /*left: 5%;
+    right: 5%;*/
+    z-index: 9990;
     color: navy;
     background-color: rgba(255, 255, 255, 0.8);
 }
@@ -965,7 +966,7 @@ label {
 
 /*Кнопка вверх как ВК*/
 .upbtn {
-    z-index: 9999;
+    z-index: 9995;
     width: 150px;
     height: 100%;
     color: #FFF;
@@ -1045,3 +1046,26 @@ label {
     bottom:14px;
 }
 */
+
+/*Индикатор*/
+.header {
+    position: fixed;
+    width: 100%;
+    /*left: 5%;
+    right: 5%;*/
+    top: 0;
+    z-index: 9999;
+}
+
+/* The progress container (grey background) */
+.progress-container {
+    width: 100%;
+    height: 1px;
+}
+
+/* The progress bar (scroll indicator) */
+.progress-bar {
+    height: 1px;
+    background: navy;
+    width: 0;
+}

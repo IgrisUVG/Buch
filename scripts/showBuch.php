@@ -33,6 +33,12 @@ if ($result) {
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
 </head>
 <body>
+<!--Индикатор-->
+<div class="header">
+    <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+    </div>
+</div>
 <div id="headerMain">
     <div id="header"><h1>Библиотека</h1></div>
 </div>
@@ -185,4 +191,17 @@ if ($result) {
         return false;
     });
 </script-->
+<script>
+    // Индикатор
+    window.onscroll = function () {
+        myFunction()
+    };
+
+    function myFunction() {
+        var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+        var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        var scrolled = (winScroll / height) * 100;
+        document.getElementById("myBar").style.width = scrolled + "%";
+    }
+</script>
 </html>
