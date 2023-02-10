@@ -203,7 +203,7 @@
             });
         } else {
             $('.upbtn').css({
-                left: '-100px'
+                left: '-150px'
             });
         }
     });
