@@ -320,14 +320,20 @@ td em {
 td .em_bold {
     font-style: italic;
     font-weight: bolder;
-    font-family: "Times New Roman", sans-serif;
+    font-family: "Times New Roman", serif;
     font-size: 1.02em;
+}
+
+.em_it {
+    font-style: italic;
+    font-size: 0.9em;
+    font-family: "Elizabeth_tt Uni Italic", serif;
 }
 
 td .letter {
     font-style: italic;
     font-weight: 900;
-    font-family: "Elizabeth_tt Uni Italic", sans-serif;
+    font-family: "Elizabeth_tt Uni Italic", serif;
     /*font-size: 0.8em;*/
 }
 
