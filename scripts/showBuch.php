@@ -145,7 +145,7 @@ if ($result) {
     //    $('.notes').addClass('timesFont');
     //    $('.inhalt td').addClass('timesFont');
     //}
-    if (autor_id == '1845') {
+    if (autor_id == '1845' || autor_id == '1868') {
         $('.inhalt td:nth-child(1)').addClass('ohne_indent_min');
     }
 </script>
