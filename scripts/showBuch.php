@@ -99,16 +99,20 @@ if ($result) {
 <script>
     elementBuchData = $('#buchData');
     elementBuchDataMain = $('#buchDataMain');
-    buchDataHeight = elementBuchData.css('height');
+    buchDataHeight = elementBuchData.css('height').replace(/[^0-9]/g, '');
+    //alert('buchDataHeight = ' + buchDataHeight);
     //    coverTop = elementCover.css('top');
-    elementBuchDataMain.css('height', function (i, val) {
+    elementBuchDataMain.css('height', buchDataHeight + 'px');
+    /*elementBuchDataMain.css('height', function () {
         if (buchDataHeight > '45') {
-            return buchDataHeight;
-        } else {
-            return val;
+     return buchDataHeight + 'px';
         }
-    });
-    alert('buchData = ' + elementBuchData.css('height') + '\n' + 'buchDataMain = ' + elementBuchDataMain.css('height'));
+     return this;
+     });*/
+    /*$(document).ready(function(){
+     if (buchDataHeight > 45)elementBuchDataMain.css('height', buchDataHeight + 'px');
+     alert('buchData = ' + elementBuchData.css('height') + '\n' + 'buchDataMain = ' + elementBuchDataMain.css('height'));
+     });*/
 </script>
 <script>
     autor_id = '<?php echo $autor_id ?>';
