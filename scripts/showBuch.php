@@ -108,6 +108,7 @@ if ($result) {
             return val;
         }
     });
+    alert('buchDataMain = ' + $('#buchDataMain').css('height') + '\n' + 'buchData = ' + $('#buchData').css('height'));
 </script>
 <script>
     autor_id = '<?php echo $autor_id ?>';
