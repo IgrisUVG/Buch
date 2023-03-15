@@ -663,6 +663,13 @@ img.cover_pic {
     text-align: right;
 }
 
+.paragraph_5 {
+    display: inline-block;
+    text-indent: 0 !important;
+    width: 30em;
+    text-align: right;
+}
+
 .marriet {
     display: inline-block;
     float: left;
