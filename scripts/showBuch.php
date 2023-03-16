@@ -122,7 +122,7 @@ if ($result) {
     //    if (autor_id == '512' || autor_id == '513') {
     //        $('.inhalt td:nth-child(1)').addClass('kihot');
     //    }
-    if (autor_id == '1137' || autor_id == '1829' || autor_id == '1830' || autor_id == '1867') {
+    if (autor_id == '1137' || autor_id == '1829' || autor_id == '1830' || autor_id == '1867' || autor_id == '1920') {
         $('.inhalt td').addClass('timesFont');
     }
     if (autor_id == '601') {
