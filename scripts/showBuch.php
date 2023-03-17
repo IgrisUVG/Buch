@@ -122,7 +122,7 @@ if ($result) {
     //    if (autor_id == '512' || autor_id == '513') {
     //        $('.inhalt td:nth-child(1)').addClass('kihot');
     //    }
-    if (autor_id == '1137' || autor_id == '1829' || autor_id == '1830' || autor_id == '1867' || autor_id == '1920' || autor_id == '1921' || autor_id == '1922') {
+    if (autor_id == '1137' || autor_id == '1829' || autor_id == '1830' || autor_id == '1867' || autor_id == '1920' || autor_id == '1921' || autor_id == '1922' || autor_id == '1924' || autor_id == '1925') {
         $('.inhalt td').addClass('timesFont');
     }
     if (autor_id == '601') {
@@ -153,8 +153,11 @@ if ($result) {
     if (autor_id == '1845' || autor_id == '1868' || autor_id == '1891') {
         $('.inhalt td:nth-child(1)').addClass('ohne_indent_min');
     }
-    if (autor_id == '1921' || autor_id == '1922' || autor_id == '1923') {
+    if (autor_id == '1921' || autor_id == '1922' || autor_id == '1923' || autor_id == '1925') {
         $('.inhalt h3').wrapInner('<b></b>').text('INHALTSVERZEICHNIS:');
+    }
+    if (autor_id == '1924') {
+        $('.inhalt h3').wrapInner('<b></b>').text('INHALT:');
     }
 </script>
 <script>
