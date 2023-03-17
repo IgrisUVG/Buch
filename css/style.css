@@ -66,6 +66,19 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: "GothicG";
+    src: url("../fonts/gothicg.eot");
+    src: url("../fonts/gothicg.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/gothicg.otf") format("opentype"),
+    url("../fonts/gothicg.svg") format("svg"),
+    url("../fonts/gothicg.ttf") format("truetype"),
+    url("../fonts/gothicg.woff") format("woff"),
+    url("../fonts/gothicg.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
 html {
     height: 100%;
 }
@@ -574,6 +587,11 @@ img.cover_pic {
     font-family: Georgia, 'Times New Roman', serif;
     font-size: 1em;
     /*line-height: 1.2;*/
+}
+
+.gothicGFont_n {
+    font-family: 'GothicG', Georgia, 'Times New Roman', serif;
+    font-size: 1.05em;
 }
 
 .big {
