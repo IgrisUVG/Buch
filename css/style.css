@@ -1,7 +1,21 @@
 @font-face {
     font-family: 'Conv_Lester Deco';
-    src: url('../fonts/Lester Deco.eot');
-    src: local('☺'), url('../fonts/Lester Deco.woff') format('woff'), url('../fonts/Lester Deco.ttf') format('truetype'), url('../fonts/Lester Deco.svg') format('svg');
+    /*src: url('../fonts/Lester Deco.eot');*/
+    src: local('☺'),
+    url('../fonts/Lester Deco.woff') format('woff'),
+    url('../fonts/Lester Deco.ttf') format('truetype'),
+    url('../fonts/Lester Deco.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lester Deco Mein';
+    /*src: url('../fonts/Lester Deco.eot');*/
+    src: local('☺'),
+    url('../fonts/LesterDeco_M.woff') format('woff'),
+    url('../fonts/LesterDeco_M.ttf') format('truetype'),
+    url('../fonts/LesterDeco_M.svg') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -87,7 +101,8 @@ body {
     width: 100%;
     /*margin-left: auto;*/
     /*margin-right: auto;*/
-    font-family: 'Conv_Lester Deco', Arial, sans-serif;
+    /*font-family: 'Conv_Lester Deco', Arial, sans-serif;*/
+    font-family: 'Lester Deco Mein', Arial, sans-serif;
     color: midnightblue;
 }
 
