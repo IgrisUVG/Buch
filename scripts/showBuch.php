@@ -153,7 +153,7 @@ if ($result) {
     if (autor_id == '1845' || autor_id == '1868' || autor_id == '1891') {
         $('.inhalt td:nth-child(1)').addClass('ohne_indent_min');
     }
-    if (autor_id == '1921' || autor_id == '1922' || autor_id == '1923' || autor_id == '1925' || autor_id == '1927' || autor_id == '1928' || autor_id == '1929') {
+    if (autor_id == '1921' || autor_id == '1922' || autor_id == '1923' || autor_id == '1925' || autor_id == '1927' || autor_id == '1928' || autor_id == '1929' || autor_id == '1930') {
         $('.inhalt h3').wrapInner('<b></b>').text('INHALTSVERZEICHNIS:');
     }
     if (autor_id == '1924' || autor_id == '1926') {
