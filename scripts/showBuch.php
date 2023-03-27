@@ -156,7 +156,7 @@ if ($result) {
     if (autor_id == '1921' || autor_id == '1922' || autor_id == '1923' || autor_id == '1925' || autor_id == '1927' || autor_id == '1928' || autor_id == '1929' || autor_id == '1930' || autor_id == '1932') {
         $('.inhalt h3').wrapInner('<b></b>').text('INHALTSVERZEICHNIS:');
     }
-    if (autor_id == '1924' || autor_id == '1926') {
+    if (autor_id == '1924' || autor_id == '1926' || autor_id == '1935') {
         $('.inhalt h3').wrapInner('<b></b>').text('INHALT:');
     }
     if (autor_id == '1933') {
