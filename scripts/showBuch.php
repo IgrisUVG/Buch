@@ -165,6 +165,9 @@ if ($result) {
     if (autor_id == '1934') {
         $('.inhalt h3').wrapInner('<b></b>').html('CONTENTS<br>СОДЕРЖАНИЕ');
     }
+    if (autor_id == '1937') {
+        $('.inhalt h3').wrapInner('<b></b>').html('TABLE<br>СОДЕРЖАНИЕ');
+    }
 </script>
 <script>
     //Кнопка вверх как ВК
