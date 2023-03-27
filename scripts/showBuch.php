@@ -159,7 +159,7 @@ if ($result) {
     if (autor_id == '1924' || autor_id == '1926') {
         $('.inhalt h3').wrapInner('<b></b>').text('INHALT:');
     }
-    if (autor_id == '1924' || autor_id == '1933') {
+    if (autor_id == '1933') {
         $('.inhalt h3').wrapInner('<b></b>').text('TABLE DES MATIÈRES:');
     }
 </script>
