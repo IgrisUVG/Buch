@@ -162,6 +162,9 @@ if ($result) {
     if (autor_id == '1933') {
         $('.inhalt h3').wrapInner('<b></b>').text('TABLE DES MATIÈRES:');
     }
+    if (autor_id == '1934') {
+        $('.inhalt h3').wrapInner('<b></b>').html('CONTENTS<br>СОДЕРЖАНИЕ');
+    }
 </script>
 <script>
     //Кнопка вверх как ВК
