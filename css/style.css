@@ -683,6 +683,12 @@ img.cover_pic {
     text-align: right;
 }
 
+.rimskeR_mini {
+    display: inline-block;
+    width: 1.8em;
+    text-align: right;
+}
+
 .rimskeL {
     display: inline-block;
     width: 0.5em;
