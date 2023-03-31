@@ -442,7 +442,8 @@ img.cover_pic {
 }
 
 .notes {
-    font-family: FuturaMediumC, Arial, sans-serif;
+    /*font-family: FuturaMediumC, Arial, sans-serif;*/
+    font-family: FuturaMediumC Mein, Arial, sans-serif;
     font-size: 0.9em;
 }
 
@@ -462,7 +463,8 @@ img.cover_pic {
 
 .inhalt table {
     /*width: 27em;*/
-    font-family: FuturaMediumC, Arial, sans-serif;
+    /*font-family: FuturaMediumC, Arial, sans-serif;*/
+    font-family: FuturaMediumC Mein, Arial, sans-serif;
 }
 
 .inhalt td:nth-child(1) {
