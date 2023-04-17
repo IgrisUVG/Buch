@@ -163,13 +163,16 @@ if ($result) {
         $('.inhalt h3').wrapInner('<b></b>').text('TABLE DES MATIÈRES:');
     }
     if (autor_id == '1934') {
-        $('.inhalt h3').wrapInner('<b></b>').html('CONTENTS<br>СОДЕРЖАНИЕ');
+        $('.inhalt h3').wrapInner('<b></b>').html('CONTENTS<br>СОДЕРЖАНИЕ:');
     }
     if (autor_id == '1937') {
-        $('.inhalt h3').wrapInner('<b></b>').html('TABLE<br>СОДЕРЖАНИЕ');
+        $('.inhalt h3').wrapInner('<b></b>').html('TABLE<br>СОДЕРЖАНИЕ:');
     }
     if (autor_id == '1942') {
-        $('.inhalt h3').wrapInner('<b></b>').html('SPIS TRE&#346;CI');
+        $('.inhalt h3').wrapInner('<b></b>').html('SPIS TRE&#346;CI:');
+    }
+    if (autor_id == '1945') {
+        $('.inhalt h3').wrapInner('<b></b>').html('INHALTSVERZEICHNIS<br>СОДЕРЖАНИЕ:');
     }
 </script>
 <script>
