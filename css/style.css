@@ -428,6 +428,12 @@ img.cover_pic {
     text-align: right !important;
 }
 
+.text_right_big {
+    display: inline-block;
+    width: 9em;
+    text-align: right !important;
+}
+
 .glavaCent,
 .description center {
     text-indent: 0;
