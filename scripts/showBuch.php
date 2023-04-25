@@ -174,6 +174,9 @@ if ($result) {
     if (autor_id == '1945') {
         $('.inhalt h3').wrapInner('<b></b>').html('INHALTSVERZEICHNIS<br>СОДЕРЖАНИЕ:');
     }
+    if (autor_id == '1949') {
+        $('td b').css("font-style", "italic");
+    }
 </script>
 <script>
     //Кнопка вверх как ВК
