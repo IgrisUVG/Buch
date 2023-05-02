@@ -553,6 +553,16 @@ img.cover_pic {
     margin-left: -2.3em;
 }
 
+.hr_center_min {
+    border: none;
+    color: navy;
+    background-color: navy;
+    height: 0.05em;
+    width: 3em;
+    margin-left: auto !important;
+    margin-right: auto;
+}
+
 .kihot {
     padding-left: 0 !important;
     text-indent: 1.5em !important;
