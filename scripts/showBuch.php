@@ -15,7 +15,7 @@ if ($result) {
     $schrank_num = $row['schrank_num'];
     $regal_num = $row['regal_num'];
     $druck = preg_replace('/(?![^<]*?>)\"([^\"]+)\"/', '&laquo;$1&raquo;', $row['druck']);
-    $notes = $row['notes'];
+    $notes = preg_replace('/(?![^<]*?>)\"([^\"]+)\"/', '&laquo;$1&raquo;', $row['notes']);
     $cover = $row['cover'];
     $image_query = "SELECT * FROM images WHERE image_id=" . $cover;
     $image_result = mysqli_query($mysqli, $image_query);
