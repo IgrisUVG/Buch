@@ -140,7 +140,7 @@ if ($result) {
         $('.inhalt h3').wrapInner('<b></b>').addClass('oldFont_h3');
         $('.inhalt td').addClass('oldFont_n');
     }
-    if (autor_id == '1733' || autor_id == '1740'){
+    if (autor_id == '1733' || autor_id == '1740' || autor_id == '2053'){
         $('.description p:last-child').addClass('text_right');
     }
     //if (autor_id == '1829'){
