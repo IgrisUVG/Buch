@@ -183,6 +183,9 @@ if ($result) {
     if (autor_id == '1969') {
         $('.inhalt h3').wrapInner('<b></b>').addClass('oldFont_h3').text('ОГЛАВЛЕНІЕ.');
     }
+    if (autor_id == '2104') {
+        $('.inhalt h3').wrapInner('<b></b>').text('Список иллюстраций');
+    }
 </script>
 <script>
     //Кнопка вверх как ВК
