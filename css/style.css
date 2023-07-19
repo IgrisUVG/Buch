@@ -409,6 +409,7 @@ img.cover_pic {
     font-family: FuturaMediumC Mein, Arial, sans-serif;
     text-align: justify;
     text-indent: 1em;
+    padding-top: 0.2em;
     /*font-size: 1.2em;*/
 }
 
