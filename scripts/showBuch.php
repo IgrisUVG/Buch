@@ -153,7 +153,7 @@ if ($result) {
     //    $('.notes').addClass('timesFont');
     //    $('.inhalt td').addClass('timesFont');
     //}
-    if (autor_id == '1845' || autor_id == '1868' || autor_id == '1891') {
+    if (autor_id == '1845' || autor_id == '1868' || autor_id == '1891' || autor_id == '2138') {
         $('.inhalt td:nth-child(1)').addClass('ohne_indent_min');
     }
     if (autor_id == '1921' || autor_id == '1922' || autor_id == '1923' || autor_id == '1925' || autor_id == '1927' || autor_id == '1928' || autor_id == '1929' || autor_id == '1930' || autor_id == '1932' || autor_id == '1944') {
