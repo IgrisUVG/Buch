@@ -143,7 +143,7 @@ if ($result) {
     if (autor_id == '1733' || autor_id == '1740' || autor_id == '2053'){
         $('.description p:last-child').addClass('text_right');
     }
-    if (autor_id == '1733' || autor_id == '2053'){
+    if (autor_id == '1733' || autor_id == '2053' || autor_id == '2140') {
         $('.cover img').css('width','300px');
     }
     //if (autor_id == '1829'){
