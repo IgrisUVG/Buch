@@ -188,7 +188,7 @@ if ($result) {
         $('.inhalt h3').wrapInner('<b></b>').addClass('oldFont_h3').text('ОГЛАВЛЕНІЕ.');
     }
     //Бунин Собрание сочинений 1915:
-    if (autor_id == '2120' || autor_id == '2121' || autor_id == '2122' || autor_id == '2123' || autor_id == '2124') {
+    if (autor_id == '2120' || autor_id == '2121' || autor_id == '2122' || autor_id == '2123' || autor_id == '2124' || autor_id == '2145' || autor_id == '2146') {
         $('.inhalt h3').text('ОГЛАВЛЕНІЕ.');
     }
     if (autor_id == '2122') {
