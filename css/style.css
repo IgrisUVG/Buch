@@ -581,6 +581,13 @@ img.cover_pic {
     padding-right: 2em !important;
 }
 
+.red_line_indent {
+    padding-left: 0 !important;
+    text-indent: 2.5em !important;
+    text-align: justify;
+    padding-right: 1.5em !important;
+}
+
 .inhalt td:nth-child(2) {
     /*font-family: Georgia, serif;*/
     font-size: 0.8em;
