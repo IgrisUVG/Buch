@@ -157,7 +157,7 @@ if ($result) {
         $('.inhalt td:nth-child(1)').addClass('ohne_indent_min');
     }
     //Іоаннъ Златоустъ
-    if (autor_id == '2146' || autor_id == '2147') {
+    if (autor_id == '2146' || autor_id == '2147' || autor_id == '2150') {
         $('.inhalt td:nth-child(1)').addClass('red_line_indent');
     }
     if (autor_id == '1921' || autor_id == '1922' || autor_id == '1923' || autor_id == '1925' || autor_id == '1927' || autor_id == '1928' || autor_id == '1929' || autor_id == '1930' || autor_id == '1932' || autor_id == '1944') {
