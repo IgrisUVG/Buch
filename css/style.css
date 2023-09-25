@@ -537,6 +537,17 @@ img.cover_pic {
     margin-left: 4.5em;
 }
 
+.inhalt td:nth-child(1) p.ohne_indent_marg {
+    /*display: inline-block;*/
+    /*float: left;*/
+    font-size: 1em;
+    /*line-height: 1.2;*/
+    text-indent: 0;
+    text-align: justify;
+    padding-right: 0.5em;
+    margin-left: 0;
+}
+
 .inhalt td:nth-child(1) p.ohne_indent_min {
     font-size: 0.9em;
     text-indent: 0;
